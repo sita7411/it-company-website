@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codexira Infotech Header</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="protfolio.css" />
+    <link rel="stylesheet" href="protfolio-responsive.css" />
+  </head>
+  <body>
+    <!-- ================================
+     Header Section 
+================================== -->
+
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/Home/logo.png" alt="Codexira Logo" />
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <nav class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li class="dropdown">
+              <a href="Service.Html">Services <span class="arrow">▾</span></a>
+              <ul class="simple-dropdown">
+                <li><a href="App-Development.html">App Development</a></li>
+                <li><a href="Web-Development.html">Web Development</a></li>
+                <li><a href="ui-ux.html">UI/UX Design</a></li>
+                <li><a href="game-developemt.html">Game Development</a></li>
+                <li><a href="digital-marketing.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="protfolio.html">Portfolio</a></li>
+            <li><a href="carrer.html">Career</a></li>
+          </ul>
+          <a href="contact-us.html" class="btn-header">CONTACT US</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav-header">
+        <div class="mobile-logo">
+          <img
+            src="images/Home/logo.png"
+            alt="Codexira Logo"
+            style="
+              height: 180px;
+              margin-top: -60px;
+              margin-bottom: -60px;
+              display: block;
+            "
+          />
+        </div>
+        <div class="close-btn" id="close-menu">×</div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="About.html">ABOUT US</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="carrer.html">CAREER</a></li>
+        <li><a href="protfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact-us.html">CONTACT US</a></li>
+        <li class="dropdown-mobile">
+          <a href="Service.Html" id="services-toggle"
+            >SERVICES <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="services-menu">
+            <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
+            <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
+            <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
+            <li><a href="game-developemt.html">GAME DEVELOPMENT</a></li>
+            <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ================================
+     Hero Section 
+================================== -->
+    <section class="about-banner">
+      <div class="about-banner-overlay">
+        <div class="banner-content">
+          <h1>Protfolio</h1>
+          <p><a href="index.html">Home</a> <span>»</span>Protfolio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+     protfolio Section 
+================================== -->
+    <section class="portfolio-section">
+      <div class="portfolio-header">
+        <h2>Our Creations</h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <a href="images/protfolio/project-1.png" target="_blank">
+            <img
+              src="images/protfolio/project-1.png"
+              alt="Shopora"
+              class="project-img"
+            />
+          </a>
+          <div class="portfolio-icon">
+            <img src="images/protfolio/logo-1.svg" alt="Icon" />
+          </div>
+          <h3>Shopora</h3>
+          <p class="tag">MERN</p>
+          <p class="desc">
+            Boosts sales with React-powered UI & MongoDB personalization.
+          </p>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="images/protfolio/project-2.jpg" target="_blank">
+            <img
+              src="images/protfolio/project-2.jpg"
+              alt="FitSoul"
+              class="project-img"
+            />
+          </a>
+          <div class="portfolio-icon">
+            <img src="images/protfolio/logo-2.svg" alt="Icon" />
+          </div>
+          <h3>FitSoul</h3>
+          <p class="tag">Android + SQLite</p>
+          <p class="desc">
+            Modern yoga & fitness platform with trainer booking & reviews.
+          </p>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="images/protfolio/project-3.jpg" target="_blank">
+            <img
+              src="images/protfolio/project-3.jpg"
+              alt="AutoZoneX"
+              class="project-img"
+            />
+          </a>
+          <div class="portfolio-icon">
+            <img src="images/protfolio/icon-3.svg" alt="Icon" />
+          </div>
+          <h3>AutoZoneX</h3>
+          <p class="tag">Laravel + ReactJS</p>
+          <p class="desc">Car care with smart booking and live tracking.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="images/protfolio/project-4.jpg" target="_blank">
+            <img
+              src="images/protfolio/project-4.jpg"
+              alt="EduWave"
+              class="project-img"
+            />
+          </a>
+          <div class="portfolio-icon">
+            <img src="images/protfolio/icon-4.svg" alt="Icon" />
+          </div>
+          <h3>EduWave</h3>
+          <p class="tag">Laravel + ReactJS</p>
+          <p class="desc">Flexible online learning with expert-led courses.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="images/protfolio/project-5.jpg" target="_blank">
+            <img
+              src="images/protfolio/project-5.jpg"
+              alt="CraveNest"
+              class="project-img"
+            />
+          </a>
+          <div class="portfolio-icon">
+            <img src="images/protfolio/icon-5.svg" alt="Icon" />
+          </div>
+          <h3>CraveNest</h3>
+          <p class="tag">NodeJS + ReactJS</p>
+          <p class="desc">Redefines food delivery with fast, fresh meals.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <a href="images/protfolio/project-6.jpg" target="_blank">
+            <img
+              src="images/protfolio/project-6.jpg"
+              alt="BlockPuzzle"
+              class="project-img"
+            />
+          </a>
+          <div class="portfolio-icon">
+            <img src="images/protfolio/icon-6.svg" alt="Icon" />
+          </div>
+          <h3>Block Puzzle</h3>
+          <p class="tag">Unity + Kotlin</p>
+          <p class="desc">
+            Train your brain with fun logic-based block puzzles.
+          </p>
+        </div>
+
+        <div class="App-Column">
+          <div class="portfolio-card">
+            <a href="images/protfolio/project-7.jpg" target="_blank">
+              <img
+                src="images/protfolio/project-7.jpg"
+                alt="Vaultgram"
+                class="project-img"
+              />
+            </a>
+            <div class="portfolio-icon">
+              <img src="images/protfolio/icon-7.svg" alt="Icon" />
+            </div>
+            <h3>Vaultgram</h3>
+            <p class="tag">Flutter + Firebase</p>
+            <p class="desc">
+              Private visual diary with moods, stories, and secure albums.
+            </p>
+          </div>
+
+          <div class="portfolio-card">
+            <a href="images/protfolio/project-8.png" target="_blank">
+              <img
+                src="images/protfolio/project-8.png"
+                alt="PixelRush"
+                class="project-img"
+              />
+            </a>
+            <div class="portfolio-icon">
+              <img src="images/protfolio/icon-8.svg" alt="Icon" />
+            </div>
+            <h3>PixelRush</h3>
+            <p class="tag">Unity (2D)</p>
+            <p class="desc">Dash, dodge & collect in a retro endless runner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       Footer Section
+  ================================== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-column footer-about">
+      <img src="images/Home/logo.png" alt="LogicBuzz Logo" class="footer-logo" />
+      <p style="font-weight: 500;">
+        Codexira Infotech LLP, we specialize in making technologically advanced Mobile App and web solutions that allow
+        our customers to serve their customers better.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-column">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Service.Html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="carrer.html">Career</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-column">
+      <h3>Our Services</h3>
+      <ul>
+        <li><a href="App-Development.html">Mobile App Development</a></li>
+        <li><a href="Web-Development.html">Web Development</a></li>
+        <li><a href="ui-ux.html">UI/UX Designing</a></li>
+        <li><a href="game-developemt.html">Game Development</a></li>
+        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+      </ul>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-column">
+      <h3>Address</h3>
+      <div class="info-line">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>440,Opera Business Hub, Surat, Gujarat.</span>
+      </div>
+      <div class="info-line">
+        <i class="fas fa-phone"></i>
+        <span>+91 1234567890</span>
+      </div>
+      <div class="info-line">
+        <i class="fas fa-envelope"></i>
+        <span>info@codexirainfotech.com</span>
+      </div>
+    </div>
+
+    <!-- Background Map -->
+    <div class="footer-map">
+      <img src="images/Home/footer-map.webp" alt="Test Map" />
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="footer-bottom">
+    <p>
+      ©2025<span id="year"></span> <strong>Codexira Infotech</strong> is Proudly Powered by
+      <a href="Home.html">Codexira<br><span style="display:inline-block; margin-top:6px;">Infotech LLP</span></a>
+    </p>
+  </div>
+</footer>
+
+
+    <script>
+      const menuToggle = document.getElementById("mobile-menu");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeBtn = document.getElementById("close-menu");
+      const servicesToggle = document.getElementById("services-toggle");
+      const dropdownWrapper = servicesToggle.closest(".dropdown-mobile");
+
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-nav").classList.add("active");
+        });
+
+      document
+        .getElementById("close-menu")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-nav").classList.remove("active");
+        });
+
+      document
+        .getElementById("services-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(".dropdown-mobile").classList.toggle("open");
+        });
+    </script>
+  </body>
+</html>

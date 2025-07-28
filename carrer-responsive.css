@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 124%;
+  height: auto;
+  display: block;
+}
+
+/*================================================
+header - section
+=================================================*/
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .btn-header {
+    display: none;
+  }
+}
+
+/*================================================
+hero - section
+=================================================*/
+
+/* Tablets: max-width 768px */
+@media screen and (max-width: 768px) {
+  .about-banner {
+    height: 280px;
+    background-position: center center;
+  }
+
+  .banner-content h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Mobile: max-width 425px */
+@media screen and (max-width: 425px) {
+  .about-banner {
+    height: 240px;
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .banner-content p {
+    font-size: 15px;
+  }
+}
+
+/* Extra small devices: max-width 375px */
+@media screen and (max-width: 375px) {
+  .about-banner {
+    height: 220px;
+  }
+
+  .banner-content h1 {
+    font-size: 26px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+}
+
+/* Smallest devices: max-width 320px */
+@media screen and (max-width: 320px) {
+  .about-banner {
+    height: 200px;
+  }
+
+  .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-content p {
+    font-size: 13px;
+  }
+}
+
+/* ====================================
+   Responsive - Join Us Section
+==================================== */
+
+/* Tablet and smaller (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .intro-container {
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .intro-left h2,
+  .intro-left .label,
+  .divider-line {
+    margin-left: 0;
+  }
+
+  .intro-right p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Tablets and Mobile (768px and below) */
+@media screen and (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px;
+  }
+
+  .intro-left h2 {
+    font-size: 28px;
+  }
+
+  .intro-right p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+/* Mobile Phones (600px and below) */
+@media screen and (max-width: 600px) {
+  .intro-left h2 {
+    font-size: 24px;
+  }
+
+  .intro-left .label {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .divider-line {
+    width: 35px;
+  }
+}
+
+/* Small Phones (425px and below) */
+@media screen and (max-width: 425px) {
+  .intro-container {
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .intro-left h2 {
+    font-size: 22px;
+  }
+
+  .intro-right p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Extra Small Phones (375px and below) */
+@media screen and (max-width: 375px) {
+  .intro-left h2 {
+    font-size: 20px;
+  }
+
+  .intro-right p {
+    font-size: 13.5px;
+  }
+}
+
+/* Smallest Devices (320px and below) */
+@media screen and (max-width: 320px) {
+  .intro-left h2 {
+    font-size: 18px;
+  }
+
+  .intro-right p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .divider-line {
+    width: 30px;
+  }
+}
+/* ====================================
+   Responsive - joi Section
+==================================== */
+@media (max-width: 1024px) {
+  .service-card-section {
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+  }
+
+  .card {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 425px) {
+  .service-card-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100% !important; /* <-- Force full width */
+    max-width: 100% !important;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  .card-caption {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .card-caption i {
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Phones: 375px and below */
+@media (max-width: 375px) {
+  .card-caption {
+    font-size: 14px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+
+/* ====================================
+   Responsive - apply job Section
+==================================== */
+
+/* Medium screens: 1024px and below - 2 job cards per row */
+@media (max-width: 1024px) {
+  .career-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens: 768px and below - 2 job cards per row */
+@media (max-width: 768px) {
+  .career-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .apply-btn {
+    align-self: flex-start;
+  }
+}
+
+/* Mobile screens: 600px and below - 1 job card per row */
+@media (max-width: 600px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .job-content h3 {
+    font-size: 18px;
+  }
+
+  .job-content p {
+    font-size: 13px;
+  }
+
+  .apply-btn {
+    width: 50%;
+    text-align: center;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+/* Extra small screens: 375px and below */
+@media (max-width: 375px) {
+  .job-card {
+    padding: 16px;
+  }
+
+  .job-content h3 {
+    font-size: 16px;
+  }
+
+   .apply-btn {
+    width: 50%;
+    text-align: center;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-top:3px;
+  }
+}
+/* Mobile: 768px and below */
+@media (max-width: 768px) {
+  .why-join-grid {
+    grid-template-columns: repeat(3, 1fr); /* ✅ keep 3 columns for tablets */
+    gap: 60px 40px;
+    padding: 0 0px;
+  }
+
+  .why-join-section h2 {
+    font-size: 28px;
+  }
+
+  .why-join-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .why-join-item h4 {
+    font-size: 16px;
+  }
+
+  .why-join-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .why-join-icon img {
+    width: 55%;
+    height: 55%;
+  }
+}
+
+/* Extra Small Devices: 425px and below */
+@media (max-width: 425px) {
+  .why-join-section {
+    padding: 10px 10px;
+  }
+
+  .why-join-grid {
+    grid-template-columns: repeat(3, 1fr); /* ✅ Show 3 columns even on mobile */
+    gap: 27px 10px;
+    padding: 0;
+  }
+
+  .why-join-section h2 {
+    font-size: 26px;
+  }
+
+  .why-join-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .why-join-item h4 {
+    font-size: 17px;
+  }
+
+  .why-join-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .why-join-icon img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* ==============================
+footer
+=============================== */
+@media (max-width: 1200px) {
+  .footer-map {
+    right: 10%;
+    width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    text-align: left; /* Align text to the left */
+    gap: 33px;
+  }
+
+  .footer-column {
+    flex: 1 1 auto;
+    min-width: unset;
+    width: 100%;
+    max-width: 400px; /* Still keep a max-width for readability */
+  }
+
+  .footer-about {
+    max-width: 400px;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 20px;
+  }
+
+  .footer-column .info-line {
+    justify-content: flex-start; /* Align info lines to the left */
+  }
+
+  .social-icons {
+    margin-top: 25px;
+  }
+
+  .social-icons a {
+    margin-right: 10px; /* Maintain right margin for spacing */
+    margin-left: 0; /* Ensure no left margin from previous centering */
+  }
+
+  .footer-map {
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%) translateX(20%);
+    opacity: 0.05;
+    width: 400px;
+  }
+
+  hr {
+    margin: 60px 20px 20px;
+  }
+
+  .footer-bottom {
+    padding: 0 20px;
+    text-align: left; /* Align bottom text to the left */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 20px;
+  }
+
+  .footer-logo {
+    margin-top: -121px;
+    margin-left: -4px;
+  }
+  .footer-about p {
+    margin-top: -118px;
+  }
+  .footer-map {
+    display: none;
+  }
+
+  .footer-column {
+    padding: 0 10px;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+  }
+
+  .footer-column a,
+  .footer-column .info-line,
+  .footer-bottom {
+    font-size: 14px;
+  }
+
+  .footer-bottom p {
+    line-height: 1.5;
+  }
+
+  .footer-bottom a br {
+    display: none;
+  }
+
+  .footer-bottom a span {
+    display: inline;
+    margin-top: 0;
+  }
+
+  hr {
+    margin: 40px 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-about p {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .footer-column h3 {
+    font-size: 17px;
+  }
+}
