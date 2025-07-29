@@ -256,7 +256,7 @@ hero - section
 }
 
 .banner-content p a {
-  color: #033d57;
+  color: #042c3f;
   text-decoration: none;
   font-weight: 700;
 }
@@ -327,8 +327,8 @@ mobile app - section
 }
 
 .image img {
-  max-width: 100%;
-  height: auto;
+     max-width: 86%;
+    margin-left: 55px;
 }
 
 /* Animation Keyframes */
@@ -366,7 +366,7 @@ Mobile App Service - Section
 }
 
 .App-section h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #0080c6;
   margin-bottom: 20px;
@@ -375,7 +375,7 @@ Mobile App Service - Section
 .App-section p {
   max-width: 800px;
   margin: 0 auto 60px;
-  font-size: 26px;
+  font-size: 28px;
   color: #073e57;
   font-weight: 700;
   line-height: 1.6;
@@ -452,8 +452,8 @@ App development process - section
 
 .section-tag {
   color: #0080c6;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -646,12 +646,14 @@ technology - section
   padding: 80px 40px;
   text-align: center;
   background-color: #fff;
+  margin-bottom: -41px;
 }
 
 .tech-section h2 {
-  font-size: 36px;
+  font-size: 32px;
   color: #0080c6;
   margin-bottom: 53px;
+  font-weight: 700;
 }
 
 .tabs {
@@ -759,8 +761,8 @@ input#tab5:checked ~ #content5 {
 .tech-card p {
   margin: 0;
   font-weight: 500;
-  color: #333;
-}
+  color: #043b55;
+} 
 
 /*================================================
 project - section
@@ -1063,8 +1065,8 @@ FAQS - section
   text-decoration: none;
 }
 
-.footer-column a:hover {
-  color: #0080c6;
+.footer .footer-column ul li a:hover {
+  color: #0080c6 !important;
 }
 
 .footer-column .info-line {
@@ -1107,30 +1109,34 @@ FAQS - section
 .footer-bottom {
   font-size: 15px;
   color: #666;
-  padding: 0 40px;
+  padding: 0 -12px;
   margin-top: 10px;
   position: relative;
   z-index: 1;
 }
 
-.footer-bottom a {
+.footer-bottom a,
+.name{
   color: #0080c6;
+  margin-top: -0px;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .footer p:last-child {
   margin-bottom: 20px;
 }
+a[href="index.html"]:hover {
+  color: #073e57;
+}
 
-.footer-bottom a:hover {
-  text-decoration: underline;
+a[href="index.html"]:hover .name{
+  color: #073e57;
 }
 
 hr {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 90px 40px 30px;
+  margin: 90px 4px 30px;
   position: relative;
   z-index: 1;
 }
