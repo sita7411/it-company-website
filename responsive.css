@@ -1245,7 +1245,7 @@ RESPONSIVE BREAKPOINTS
   .contact-container {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    gap: 9px;
   }
 
   .contact-form {
@@ -1314,7 +1314,7 @@ RESPONSIVE BREAKPOINTS
   }
 
   .contact-image img {
-    width: 100%;
+    width: 120%;
   }
 }
 

@@ -1980,10 +1980,12 @@ button:hover {
 .footer p:last-child {
   margin-bottom: 20px;
 }
+a[href="index.html"]:hover {
+  color: #073e57;
+}
 
-
-a[href="Home.html"]:hover span {
-  color: #0056b3;
+a[href="index.html"]:hover span {
+  color: #073e57;
 }
 
 

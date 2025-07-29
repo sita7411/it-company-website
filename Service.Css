@@ -257,7 +257,7 @@ hero - section
 }
 
 .banner-content p a {
-  color: #033d57;
+  color: #042c3f;
   text-decoration: none;
   font-weight: 700;
 }
@@ -478,8 +478,8 @@ Service - section
   text-decoration: none;
 }
 
-.footer-column a:hover {
-  color: #007bff;
+.footer .footer-column ul li a:hover {
+  color: #0080c6 !important;
 }
 
 .footer-column .info-line {
@@ -493,7 +493,7 @@ Service - section
 }
 
 .footer-column .info-line i {
-  color: #007bff;
+  color: #0080c6;
   font-size: 18px;
   min-width: 20px;
   margin-top: 4px;
@@ -515,37 +515,41 @@ Service - section
 }
 
 .social-icons a:hover {
-  background: #007bff;
+  background: #0080c6;
   color: white;
 }
 
 .footer-bottom {
   font-size: 15px;
   color: #666;
-  padding: 0 40px;
+  padding: 0 -12px;
   margin-top: 10px;
   position: relative;
   z-index: 1;
 }
 
-.footer-bottom a {
-  color: #007bff;
+.footer-bottom a,
+span {
+  color: #0080c6;
+  margin-top: -0px;
   text-decoration: none;
-  margin-bottom: -0px;
 }
 
 .footer p:last-child {
   margin-bottom: 20px;
 }
+a[href="index.html"]:hover {
+  color: #073e57;
+}
 
-.footer-bottom a:hover {
-  text-decoration: underline;
+a[href="index.html"]:hover span {
+  color: #073e57;
 }
 
 hr {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 90px 40px 30px;
+  margin: 90px 4px 30px;
   position: relative;
   z-index: 1;
 }
