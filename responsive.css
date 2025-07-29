@@ -150,6 +150,11 @@ hero - section
 our solution - section
 =================================================*/
 
+/*================================================
+RESPONSIVE BREAKPOINTS
+=================================================*/
+
+/* Tablet: 1024px */
 @media screen and (max-width: 1024px) {
   .solution-container {
     gap: 25px;
@@ -159,23 +164,23 @@ our solution - section
     width: 31%;
   }
 
+  .section-title {
+    margin-left: auto; /* ✅ Reset shift */
+    margin-right: auto;
+  }
+
   .section-title h2 {
-    margin-left: 0;
     font-size: 32px;
   }
 
   .section-title p {
-    margin-left: auto;
-    margin-right: auto;
     font-size: 14px;
   }
 }
 
+/* Tablet: 768px */
 @media screen and (max-width: 768px) {
   .solution-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
     padding: 0 10px;
   }
@@ -183,38 +188,31 @@ our solution - section
   .solution-box {
     width: 100%;
     max-width: 360px;
-    min-width: unset; /* ✅ Important */
     box-sizing: border-box;
   }
+
   .section-title {
     padding: 0 10px;
     margin-bottom: 35px;
-    margin-top: -36px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section-title h2 {
     font-size: 26px;
-    text-align: center;
   }
 
   .section-title p {
     font-size: 14px;
-    text-align: center;
-  }
-
-  .solution-box img {
-    display: block;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .solution-container {
-    padding: 0 5px; /* Reduced side padding for more width */
-  }
-
+/* Mobile: 600px */
+@media screen and (max-width: 600px) {
   .solution-box {
-    min-width: 299px;
-    padding: 10px 15px; /* Adjust padding if too tall */
+    width: 100%;
+    padding: 20px;
   }
 
   .section-title h2 {
@@ -222,18 +220,67 @@ our solution - section
   }
 
   .solution-box h3 {
-    font-size: 18px;
-    margin-bottom: 49px;
+    font-size: 20px;
   }
 
   .solution-box p {
     font-size: 14px;
-    margin: -39px 10px 58px 21px;
+  }
+}
+
+/* Mobile: 425px */
+@media screen and (max-width: 425px) {
+  .solution-container {
+    padding: 0 5px;
   }
 
-  .section-title img {
-    width: 40px;
-    height: 40px;
+  .solution-box {
+    padding: 15px;
+    min-width: unset;
+  }
+
+  .solution-box h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .solution-box p {
+    font-size: 13.5px;
+    margin-bottom: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 22px;
+  }
+}
+
+/* Extra Mobile: 375px */
+@media screen and (max-width: 375px) {
+  .solution-box {
+    padding: 15px 10px;
+  }
+
+  .solution-box h3 {
+    font-size: 17px;
+  }
+
+  .solution-box p {
+    font-size: 13px;
+  }
+}
+
+/* Smallest Mobile: 320px */
+@media screen and (max-width: 320px) {
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .solution-box h3 {
+    font-size: 16px;
+  }
+
+  .solution-box p {
+    font-size: 12.5px;
   }
 }
 
@@ -303,13 +350,13 @@ our solution - section
     justify-content: flex-start;
   }
 }
-
 @media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+    padding: 0 20px;
   }
 
   .about-images,
@@ -321,36 +368,39 @@ our solution - section
   .about-images {
     position: relative;
     text-align: center;
+    margin-left: 0;
+    padding: 0;
   }
 
   .about-images .main-img {
     margin: 0 auto 30px;
     width: 100%;
-    max-width: 418px;
-    margin-left: -74px;
+    max-width: 360px;
   }
 
   .about-images .overlay-img {
-    width: 296px;
-    left: 79%;
+    width: 229px;
+    left: 76%;
+    bottom: -45px;
     transform: translateX(-50%);
   }
 
   .exp-badge-img {
-    width: 127px;
-    left: 32%;
+    width: 110px;
+    left: 43%;
+    bottom: -12px;
     transform: translateX(-50%);
-    bottom: -19px;
   }
 
   .about-content {
-    padding: 57px 20px;
+    padding: 66px 10px 20px;
     text-align: center;
   }
 
   .about-content h2 {
     font-size: 24px;
     line-height: 1.4;
+    margin-bottom: 15px;
   }
 
   .about-content p {
@@ -360,49 +410,32 @@ our solution - section
   }
 
   .about-modern-boxes {
-    grid-template-columns: 1fr; /* Only 1 column */
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 25px;
     justify-items: center;
+    padding: 0 10px;
   }
 
   .about-modern-boxes .box {
     text-align: left;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .read-more {
-    margin-left: 30px;
+    margin: -4px auto 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .read-more button {
+    font-size: 15px;
+    padding: 10px 22px;
   }
 
   .signature {
     text-align: center;
-  }
-}
-
-/* 425px and below (Mobile) */
-@media screen and (max-width: 425px) {
-  .about-content h2 {
     font-size: 22px;
-  }
-
-  .about-content p {
-    font-size: 14px;
-  }
-
-  .about-modern-boxes {
-    grid-template-columns: 1fr;
-  }
-
-  .about-images .main-img {
-    max-width: 90%;
-  }
-
-  .about-images .overlay-img {
-    width: 160px;
-  }
-
-  .exp-badge-img {
-    width: 80px;
   }
 }
 
@@ -421,26 +454,26 @@ our solution - section
 
   .about-images .main-img {
     max-width: 95%;
-    margin: 0 auto 30px;
+    margin: 0 -19px 30px;
   }
 
   .about-images .overlay-img {
     width: 222px;
     margin-left: -17px;
     left: 75%;
-    bottom: -20px;
+    bottom: -53px;
     transform: translateX(-50%);
   }
 
   .exp-badge-img {
     width: 80px;
-    left: 35%;
-    bottom: 5px;
+    left: 32%;
+    bottom: -12px;
     transform: translateX(-50%);
   }
 
   .about-content {
-    padding: 30px 15px;
+    padding: 60px 20px;
   }
 
   .about-content h2 {
@@ -466,21 +499,17 @@ our solution - section
 
   .read-more {
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+    gap: 12px;
   }
 
   .read-more button {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 15px;
+    padding: 10px 22px;
   }
 
   .signature {
     font-size: 20px;
-    margin-top: 0;
-    text-align: center;
   }
 }
 
@@ -544,6 +573,7 @@ our solution - section
 @media (max-width: 767px) {
   .service-section {
     grid-template-columns: 1fr; /* 1 column */
+    margin-top: -35px;
   }
 }
 
@@ -697,7 +727,6 @@ our solution - section
    Testimonials - Perfect Responsive Fix
 =========================== */
 
-
 @media screen and (max-width: 425px) {
   .testimonial-row {
     display: flex;
@@ -742,6 +771,9 @@ our solution - section
   }
 }
 @media screen and (max-width: 768px) {
+  .testimonials-title .sub-title {
+    margin-top: 53px;
+  }
   .testimonial-row {
     display: flex;
     flex-direction: column;
@@ -785,7 +817,6 @@ our solution - section
   }
 }
 
-
 @media screen and (max-width: 320px) {
   .testimonial-card {
     padding: 20px 15px 35px;
@@ -801,10 +832,9 @@ our solution - section
 
   .testimonial-row {
     padding: 0 10px;
-    gap: 20px;
+    gap: 49px;
   }
 }
-
 
 /* ================================
    Our Process - Responsive Styles
@@ -825,11 +855,15 @@ our solution - section
   .work-process-section {
     padding: 50px 20px;
   }
+  .process-subtitle {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
 
   .work-steps {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px 15px;
+    gap: -6px 15px;
   }
 
   .step {
@@ -874,6 +908,7 @@ our solution - section
   }
   .work-steps {
     grid-template-columns: 1fr;
+    margin-top: -26px;
   }
 
   .step {
@@ -956,15 +991,15 @@ our solution - section
   }
 
   .tabs label {
-    min-width: 140px;
+    min-width: 229px;
     width: auto;
     font-size: 13px;
-    padding: 8px 14px;
+    padding: 8px 28px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
-    flex: 1 1 45%;
+    flex: 1 1 -2%;
     box-sizing: border-box;
   }
 
@@ -995,7 +1030,7 @@ our solution - section
 /* Mobile: max-width 425px */
 @media screen and (max-width: 425px) {
   .projects-section {
-    padding: 40px 15px;
+    padding: 70px 15px;
   }
 
   .section-title h2 {
@@ -1013,6 +1048,7 @@ our solution - section
     padding: 10px 12px;
     font-size: 13px;
     gap: 10px;
+    flex-wrap: nowrap;
     justify-content: flex-start;
   }
 
@@ -1081,28 +1117,45 @@ our solution - section
   }
 }
 
-/* ============================
-   cta banner - Responsive
+/* ============================ 
+   CTA Banner - Responsive 
 ============================ */
 
-/* Base style: for small & medium (left align) */
-.cta-banner {
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  padding: 40px 40px;
+/* Default (desktop, ≥1024px): already perfect — no change needed */
+
+@media screen and (max-width: 1024px) {
+  .cta-banner {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    text-align: left;
+    padding: 50px 40px;
+    margin: 112px 54px;
+  }
+
+  .cta-copy {
+    max-width: 73%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .tech-loop {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+  }
 }
 
-.cta-copy {
-  width: 100%;
-  text-align: left;
-}
-
-/* Mobile (≤ 768px) */
+/* Tablet (768px and below) */
 @media screen and (max-width: 768px) {
   .cta-banner {
-    padding: 30px 25px;
-    margin: 0;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px 25px;
+    margin: 99px 30px;
   }
 
   .cta-copy h2 {
@@ -1119,24 +1172,25 @@ our solution - section
   }
 
   .tech-loop {
-    position: relative;
     width: 160px;
     height: 160px;
     margin-top: 30px;
-    transform: none;
-    right: auto;
-    top: auto;
   }
 }
-
-/* Extra small (≤ 425px) */
-@media screen and (max-width: 425px) {
-  .cta-banner {
-    padding: 25px 20px;
+@media (max-width: 575px) {
+   .cta-banner {
+    padding: 30px 10px;
+    flex-direction: column;
+    margin: 57px 19px;
   }
-
-  .cta-copy h2 {
+   .cta-copy {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+     .cta-copy h2 {
     font-size: 20px;
+    align-items: flex-start;
   }
 
   .cta-copy p {
@@ -1145,14 +1199,16 @@ our solution - section
 
   .cta-copy .btn {
     font-size: 13px;
-    padding: 10px 22px;
+    padding: 10px 24px;
   }
 
   .tech-loop {
-    width: 130px;
-    height: 130px;
+    width: 190px;
+    height: 190px;
   }
 }
+
+
 
 /* ============================
    contact - Responsive
@@ -1162,6 +1218,7 @@ our solution - section
 @media screen and (max-width: 1024px) {
   .contact-section {
     padding: 40px 40px;
+    margin-top: -70px;
   }
 
   .contact-container {

@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Codexira Infotech Header</title>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css" />
 </head>
@@ -17,7 +17,9 @@
 <header class="main-header">
   <div class="container">
     <div class="logo">
-      <img src="images/Home/logo.png" alt="Codexira Logo" />
+      <a href="index.html">
+        <img src="images/Home/logo.png" alt="Codexira Logo" />
+      </a>
     </div>
 
     <div class="menu-toggle" id="mobile-menu">☰</div>
@@ -27,7 +29,7 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="About.html">About us</a></li>
         <li class="dropdown">
-          <a href="Service.Html">Services <span class="arrow">▾</span></a>
+          <a href="Service.html">Services <span class="arrow">▾</span></a>
           <ul class="simple-dropdown">
             <li><a href="App-Development.html">App Development</a></li>
             <li><a href="Web-Development.html">Web Development</a></li>
@@ -65,7 +67,7 @@
     <li><a href="protfolio.html">PORTFOLIO</a></li>
     <li><a href="contact-us.html">CONTACT US</a></li>
     <li class="dropdown-mobile">
-      <a href="Service.Html" id="services-toggle">SERVICES <span class="arrow">▾</span></a>
+      <a href="Service.html" id="services-toggle">SERVICES <span class="arrow">▾</span></a>
       <ul class="mobile-submenu" id="services-menu">
         <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
         <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
@@ -84,14 +86,13 @@
 <section class="hero">
   <div class="hero-container">
     <div class="hero-text">
-      <h1>Building Future-Ready Software for Ambitious Businesses</h1>
+      <h1>Transforming Ideas into Scalable Digital Solutions</h1>
       <p>
-        Since 2020, we’ve been delivering high-quality web and mobile app
-        development services to clients worldwide. With a proven track
-        record of 100% project delivery success, we offer top-tier
-        developers at competitive rates. Our user-centric design approach
-        and streamlined development processes ensure tailored digital
-        solutions that drive real business results.
+        Since 2020, we’ve partnered with clients across the globe to design and develop scalable, high-quality web and
+        mobile applications. Our success is driven by consistent project delivery, cost-effective and skilled
+        development teams, and a strategic focus on user-centric design. We blend innovation with functionality to craft
+        solutions that not only meet business goals but also enhance digital experiences. From startups to enterprises,
+        we help businesses accelerate growth, streamline operations, and achieve true digital transformation.
       </p>
       <div class="hero-buttons">
         <a href="About.html" class="btn-primary">About Codexira</a>
@@ -110,57 +111,50 @@
      our solution section 
 ================================== -->
 
-<div class="section-title">
-  <span class="sub-title">
-    OUR SOLUTIONS
-  </span>
-  <h2>
-    Your Vision, Our Mission <br />Together We Build the Future
-    <span class="overlay" style="
-            transform: matrix(0, 0, 0, 1, 0, 0);
-            transform-origin: right 50% 0px;
-          "></span>
-  </h2>
-  <p>
-    We empower our customers to achieve their goals, by providing reliable
-    and quality solutions with technology and innovation.
-  </p>
-</div>
+<section class="our-solution-wrapper">
 
-<div class="solution-container">
-  <div class="solution-box">
-    <img src="https://cdn-icons-png.flaticon.com/512/4149/4149646.png" alt="Strategic Planning Icon" />
-    <h3>Strategic Planning & Insight</h3>
+  <!--  Section Title -->
+  <div class="section-title">
+    <h3>OUR SOLUTION</h3>
+    <h2>Your Ideas, Our Expertise<br />Building the Future Together</h2>
     <p>
-      We help businesses navigate digital transformation through strategic
-      IT planning, tech trend analysis, and architecture design. Our
-      insights ensure your software solutions are scalable, future-proof,
-      and aligned with your business vision.
+      We empower our customers to achieve their goals by providing reliable
+      and quality solutions with technology and innovation.
     </p>
   </div>
 
-  <div class="solution-box">
-    <img src="images/Home/our-icon1.png" alt="code security" />
-    <h3>Code Security</h3>
-    <p>
-      We prioritize security at every stage of development. Our team follows
-      industry best practices, including secure coding and regular reviews,
-      to ensure protection against threats and deliver high-performance
-      software solutions.
-    </p>
-  </div>
+  <!--  Solution Boxes -->
+  <div class="solution-container">
+    <div class="solution-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/4149/4149646.png" alt="Strategic Planning Icon" />
+      <h3>Strategic Planning & Insight</h3>
+      <p>
+        We help businesses define clear digital strategies through deep technical insight, architecture planning, and
+        innovation mapping. Our strategic approach ensures your software solutions are scalable, future-ready, and
+        aligned with long-term goals.
+      </p>
+    </div>
 
-  <div class="solution-box">
-    <img src="images/Home/our-icon2.png" alt="Management Icon" />
-    <h3>Team Management</h3>
-    <p>
-      Our skilled management team ensures seamless collaboration, agile
-      workflows, and timely project delivery. By aligning technical teams
-      with your business goals, we foster productivity, transparency, and
-      long-term success in every project.
-    </p>
+    <div class="solution-box">
+      <img src="images/Home/our-icon1.png" alt="Code Security Icon" />
+      <h3>Code Security</h3>
+      <p>
+        We embed security into every layer of development by following industry best practices like secure coding,
+        regular audits, and vulnerability assessments. Our proactive approach ensures your applications are protected
+        from evolving threats.
+      </p>
+    </div>
+
+    <div class="solution-box">
+      <img src="images/Home/our-icon2.png" alt="Team Management Icon" />
+      <h3>Team Management</h3>
+      <p>
+        Our experienced managers ensure seamless coordination between developers, designers, and stakeholders. With
+        agile workflows, transparent communication, and goal alignment, we drive productivity, accountability, and
+        timely project delivery. </p>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- ================================
      About us Section 
@@ -243,16 +237,12 @@
      sevice Section 
 ================================== -->
 
-<div class="section-title">
-  <span class="sub-title">
+<div class="service-title">
+  <span>
     Services
   </span>
   <h2>
     Codexira’s Specialized Services for Digital Excellence
-    <span class="overlay" style="
-            transform: matrix(0, 0, 0, 1, 0, 0);
-            transform-origin: right 50% 0px;
-          "></span>
   </h2>
 </div>
 
@@ -265,9 +255,9 @@
     <div class="service-text">
       <h3>ANDROID Development</h3>
       <p>
-        Planning to build or upgrade your Android app? Codexira offers
-        reliable Android development services tailored to your needs. We
-        create scalable, user-friendly apps to bring your ideas to life.
+        Looking to develop a robust Android application? Codexira specializes in building high-performance, scalable
+        Android apps tailored to your business goals. From UI/UX to deployment, we deliver secure, intuitive, and
+        feature-rich solutions that drive results.
       </p>
     </div>
   </div>
@@ -280,9 +270,9 @@
     <div class="service-text">
       <h3>IOS Development</h3>
       <p>
-        Codexira offers scalable iOS app development services focused on
-        performance, security, and user experience. From concept to App
-        Store launch, we deliver intuitive, high-quality iOS applications.
+        Codexira crafts powerful and intuitive iOS applications with a focus on performance, security, and seamless user
+        experience. From initial concept to App Store launch, we deliver scalable, future-ready apps that align with
+        your business vision.
       </p>
     </div>
   </div>
@@ -293,12 +283,11 @@
       <i class="fas fa-chart-line"></i>
     </div>
     <div class="service-text">
-      <h3>SEO & MARKETING</h3>
+      <h3>SEO & Marketing</h3>
       <p>
-        Boost your online presence with expert SEO and Digital Marketing
-        solutions. Optimize your website for higher search rankings, attract
-        organic traffic, and improve brand visibility with proven
-        strategies.
+        Elevate your online presence with Codexira’s expert SEO and digital marketing strategies. We help you rank
+        higher on search engines, drive targeted organic traffic, and strengthen your brand visibility through
+        data-driven campaigns.
       </p>
     </div>
   </div>
@@ -394,8 +383,8 @@
         your growth through innovation and digital excellence.
       </p>
       <p>
-        Founded on the principles of innovation, integrity, and excellence,
-        we are a team of seasoned professionals.
+        Driven by innovation, guided by integrity, and committed to excellence — we are a passionate team delivering
+        impactful digital solutions.
       </p>
       <a href="About.html" class="read-more-btn">READ MORE</a>
 
@@ -452,17 +441,9 @@
 <section class="testimonial-section">
   <div class="testimonial-container">
 
-    <div class="section-title">
-      <span class="sub-title">
-        TESTIMONIALS
-      </span>
-      <h2>
-        Trusted voices from the businesses we've empowered.
-        <span class="overlay" style="
-            transform: matrix(0, 0, 0, 1, 0, 0);
-            transform-origin: right 50% 0px;
-          "></span>
-      </h2>
+    <div class="section-title testimonials-title">
+      <span class="sub-title">TESTIMONIALS</span>
+      <h2>Trusted voices from the businesses we've empowered.</h2>
     </div>
     <!-- <h2>What our clients say about partnering with us</h2> -->
     <!-- <p class="subtext">
@@ -472,8 +453,8 @@
     <div class="testimonial-row">
       <!-- Card 1 -->
       <div class="testimonial-card">
-        <p>Their development team is highly skilled and reliable. We appreciated the clear communication and timely
-          delivery of every milestone.</p>
+        <p>Codexira Infotech transformed our idea into a powerful digital product. Their team was professional,
+          responsive, and delivered the project ahead of schedule. Highly recommended!</p>
         <div class="stars">★★★★☆</div>
         <div class="profile-image">
           <img src="images/Home/user1.jpg" alt="Jessica Milner" />
@@ -484,8 +465,8 @@
 
       <!-- Card 2 -->
       <div class="testimonial-card">
-        <p>Codexira Infotech perfectly captured our vision with a modern, responsive design and outstanding service
-          throughout.</p>
+        <p>Working with Codexira was seamless. From backend architecture to frontend polish, they delivered a scalable,
+          fast, and secure platform for our startup.</p>
         <div class="stars">★★★★★</div>
         <div class="profile-image">
           <img src="images/Home/user2.jpg" alt="Allie Barnes" />
@@ -496,8 +477,8 @@
 
       <!-- Card 3 -->
       <div class="testimonial-card">
-        <p>From UI/UX to backend logic, they handled everything professionally. Highly recommend Codexira for any
-          serious tech project.</p>
+        <p>From prototyping to final deployment, Codexira Infotech showcased professionalism and technical excellence.
+          The website they built is fast, responsive, and has elevated our online credibility</p>
         <div class="stars">★★★★☆</div>
         <div class="profile-image">
           <img src="images/Home/user3.jpg" alt="Jason Simpson" />
@@ -508,8 +489,8 @@
 
       <!-- Card 4 -->
       <div class="testimonial-card">
-        <p>heir support and post-launch service were top-notch. We continue to work with them for long-term maintenance
-          and updates.</p>
+        <p>We’ve been working with Codexira for over 2 years, and they continue to be a reliable technology partner.
+          Their support is proactive, their project delivery is consistent, and their communication is transparent.</p>
         <div class="stars">★★★★☆</div>
         <div class="profile-image">
           <img src="images/Home/user4.jpg" alt="Nina Patel" />
@@ -525,15 +506,9 @@
      Our Process desktop view
 ================================== -->
 <section class="work-process-section work-process-desktop">
-  <div class="section-title">
-    <span class="sub-title">
-      How It Work
-    </span>
+  <div class="process-heading">
+    <span class="process-subtitle">How It Works</span>
   </div>
-  <!-- <h2>What our clients say about partnering with us</h2> -->
-  <!-- <p class="subtext">
-        Real feedback from satisfied clients around the globe. We build trust through results.
-      </p> -->
 
   <div class="work-steps-wrapper">
     <!-- Animated arrowed lines -->
@@ -543,9 +518,9 @@
           <path d="M0,0 L0,6 L9,3 z" fill="#ccc" />
         </marker>
       </defs>
-      <line x1="150" y1="80" x2="390" y2="180" class="animated-line" marker-end="url(#arrow)" />
-      <line x1="470" y1="220" x2="700" y2="80" class="animated-line" marker-end="url(#arrow)" />
-      <line x1="800" y1="80" x2="1020" y2="200" class="animated-line" marker-end="url(#arrow)" />
+      <line x1="150" y1="80" x2="390" y2="180" class="animated-line"  />
+      <line x1="470" y1="220" x2="700" y2="80" class="animated-line" />
+      <line x1="800" y1="80" x2="1020" y2="200" class="animated-line"  />
     </svg>
 
     <div class="work-steps">
@@ -556,13 +531,13 @@
           <img src="images/Home/work-icon1.png" alt="" />
         </div>
         <h4>Plan & Design</h4>
-        <p>We transform your ideas into strategic, user-focused designs.</p>
+      <p>We start with understanding your vision and craft thoughtful, user-first designs.</p>
       </div>
 
       <!-- Step 2 -->
       <div class="step bottom">
         <h4>Develop & Build</h4>
-        <p>Our team codes clean, scalable, and high-performance solutions.</p>
+      <p>Our developers turn designs into robust, scalable, and efficient digital solutions.</p>
         <div class="circle">
           <span>2</span>
           <img src="images/Home/work-icon2.png" alt="" />
@@ -576,13 +551,13 @@
           <img src="images/Home/work-icon3.png" alt="" />
         </div>
         <h4>Test & Optimize </h4>
-        <p>We ensure everything runs smoothly through rigorous QA.</p>
+      <p>We conduct thorough testing and performance tuning for a flawless experience.</p>
       </div>
 
       <!-- Step 4 -->
       <div class="step bottom">
         <h4>Launch & Support</h4>
-        <p>Your launch is just the beginning — we’re here to help you grow.</p>
+      <p>We launch with confidence and offer continuous support for your growth.</p>
         <div class="circle">
           <span>4</span>
           <img src="images/Home/work-icon4.png" alt="" />
@@ -596,10 +571,8 @@
      Our Process (Mobile Version)
 ================================== -->
 <section class="work-process-section work-process-mobile">
-  <div class="section-title">
-    <span class="sub-title">
-      How It Work
-    </span>
+  <div class="process-heading">
+    <span class="process-subtitle">How It Works</span>
   </div>
 
   <div class="work-steps">
@@ -610,7 +583,7 @@
         <img src="images/Home/work-icon1.png" alt="Plan & Design" />
       </div>
       <h4>Plan & Design</h4>
-      <p>We transform your ideas into strategic, user-focused designs.</p>
+      <p>We start with understanding your vision and craft thoughtful, user-first designs.</p>
     </div>
 
     <!-- Step 2 -->
@@ -620,7 +593,7 @@
         <img src="images/Home/work-icon2.png" alt="Develop & Build" />
       </div>
       <h4>Develop & Build</h4>
-      <p>Our team codes clean, scalable, and high-performance solutions.</p>
+      <p>Our developers turn designs into robust, scalable, and efficient digital solutions.</p>
     </div>
 
     <!-- Step 3 -->
@@ -630,7 +603,7 @@
         <img src="images/Home/work-icon3.png" alt="Test & Optimize" />
       </div>
       <h4>Test & Optimize</h4>
-      <p>We ensure everything runs smoothly through rigorous QA.</p>
+      <p>We conduct thorough testing and performance tuning for a flawless experience.</p>
     </div>
 
     <!-- Step 4 -->
@@ -640,7 +613,7 @@
         <img src="images/Home/work-icon4.png" alt="Launch & Support" />
       </div>
       <h4>Launch & Support</h4>
-      <p>Your launch is just the beginning — we’re here to help you grow.</p>
+      <p>We launch with confidence and offer continuous support for your growth.</p>
     </div>
   </div>
 </section>
@@ -650,13 +623,11 @@
      Our Projects
 ================================== -->
 <section class="projects-section">
-  <div class="section-title">
-    <span class="sub-title">
-      Our Projects
-    </span>
-    <h2>Real Results From Real Work</h2>
-    <p>Explore some of our recent successful project launches across mobile, web, and enterprise platforms.</p>
-  </div>
+ <div class="projects-heading">
+  <span class="projects-subtitle">Our Projects</span>
+  <h2 class="projects-title">Real Results From Real Work</h2>
+</div>
+
 
   <!-- Tabs -->
   <input type="radio" name="tab" id="tab1" checked>
@@ -891,7 +862,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="About.html">About Us</a></li>
-        <li><a href="Service.Html">Services</a></li>
+        <li><a href="Service.html">Services</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="carrer.html">Career</a></li>
         <li><a href="contact-us.html">Contact</a></li>
@@ -937,8 +908,8 @@
 
   <div class="footer-bottom">
     <p>
-      ©2025<span id="year"></span> <strong>Codexira Infotech</strong> is Proudly Powered by
-      <a href="Home.html">Codexira<br><span style="display:inline-block; margin-top:6px;">Infotech LLP</span></a>
+      ©2025<span id="year"></span> <strong style="color: #221638; font-weight: 800;">Codexira Infotech</strong> is Proudly Powered by
+      <a href="index.html">Codexira<br><span style="display:inline-block; margin-top:6px;">Infotech LLP</span></a>
     </p>
   </div>
 </footer>
