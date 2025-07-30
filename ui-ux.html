@@ -16,68 +16,71 @@
      Header Section 
 ================================== -->
 
-<header class="main-header">
-  <div class="container">
-    <div class="logo">
-      <img src="images/Home/logo.png" alt="Codexira Logo" />
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Home/logo.png" alt="Codexira Logo" />
+        </a>
+      </div>
+
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="About.html">About us</a></li>
+          <li class="dropdown">
+            <a href="Service.Html">Services <span class="arrow">▾</span></a>
+            <ul class="simple-dropdown">
+              <li><a href="App-Development.html">App Development</a></li>
+              <li><a href="Web-Development.html">Web Development</a></li>
+              <li><a href="ui-ux.html">UI/UX Design</a></li>
+              <li><a href="game-developemt.html">Game Development</a></li>
+              <li><a href="digital-marketing.html">Digital Marketing</a></li>
+            </ul>
+          </li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="protfolio.html">Portfolio</a></li>
+          <li><a href="carrer.html">Career</a></li>
+        </ul>
+        <a href="contact-us.html" class="btn-header">CONTACT US</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="menu-toggle" id="mobile-menu">☰</div>
-
-    <nav class="desktop-nav">
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="About.html">About us</a></li>
-        <li class="dropdown">
-          <a href="Service.Html">Services <span class="arrow">▾</span></a>
-          <ul class="simple-dropdown">
-            <li><a href="App-Development.html">App Development</a></li>
-            <li><a href="Web-Development.html">Web Development</a></li>
-            <li><a href="ui-ux.html">UI/UX Design</a></li>
-            <li><a href="game-developemt.html">Game Development</a></li>
-            <li><a href="digital-marketing.html">Digital Marketing</a></li>
-          </ul>
-        </li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="protfolio.html">Portfolio</a></li>
-        <li><a href="carrer.html">Career</a></li>
-      </ul>
-      <a href="contact-us.html" class="btn-header">CONTACT US</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Mobile Nav -->
-<nav class="mobile-nav" id="mobile-nav">
-  <div class="mobile-nav-header">
-    <div class="mobile-logo">
-      <img src="images/Home/logo.png" alt="Codexira Logo" style="
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <div class="mobile-logo">
+        <img src="images/Home/logo.png" alt="Codexira Logo" style="
               height: 180px;
               margin-top: -60px;
               margin-bottom: -60px;
               display: block;
             " />
+      </div>
+      <div class="close-btn" id="close-menu">×</div>
     </div>
-    <div class="close-btn" id="close-menu">×</div>
-  </div>
-  <ul class="mobile-nav-links">
-    <li><a href="index.html" class="active">HOME</a></li>
-    <li><a href="About.html" >ABOUT US</a></li>
-    <li><a href="carrer.html">CAREER</a></li>
-    <li><a href="protfolio.html">PORTFOLIO</a></li>
-    <li><a href="contact-us.html">CONTACT US</a></li>
-    <li class="dropdown-mobile">
-      <a href="Service.Html" id="services-toggle">SERVICES <span class="arrow">▾</span></a>
-      <ul class="mobile-submenu" id="services-menu">
-        <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
-        <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
-        <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
-        <li><a href="game-developemt.html">GAME DEVELOPMENT</a></li>
-        <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="active">HOME</a></li>
+      <li><a href="About.html">ABOUT US</a></li>
+      <li class="dropdown-mobile">
+        <a href="Service.Html" id="services-toggle">SERVICES <span class="arrow">▾</span></a>
+        <ul class="mobile-submenu" id="services-menu">
+          <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
+          <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
+          <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
+          <li><a href="game-developemt.html">GAME DEVELOPMENT</a></li>
+          <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
+        </ul>
+      </li>
+      <li><a href="team.html">TEAM</a></li>
+      <li><a href="protfolio.html">PORTFOLIO</a></li>
+      <li><a href="carrer.html">CAREER</a></li>
+      <li><a href="contact-us.html">CONTACT US</a></li>
+    </ul>
+  </nav>
 
 
   <!-- ================================
@@ -626,40 +629,50 @@
   <script>
     let currentIndex = 0;
     const slider = document.getElementById("slider");
-    const totalSlides = slider.children.length;
-    const visibleCards = 2;
+
+    function getVisibleCards() {
+      return window.innerWidth <= 600 ? 1 : 2;
+    }
 
     function slide(direction) {
+      const totalSlides = slider.children.length;
+      const visibleCards = getVisibleCards();
       const maxIndex = totalSlides - visibleCards;
       currentIndex += direction;
 
       if (currentIndex < 0) currentIndex = 0;
       if (currentIndex > maxIndex) currentIndex = maxIndex;
 
-      const offset = -(currentIndex * (slider.children[0].offsetWidth + 30));
+      const cardWidth = slider.children[0].offsetWidth + 30; // 30px = gap
+      const offset = -(currentIndex * cardWidth);
       slider.style.transform = `translateX(${offset}px)`;
     }
+
+    // Reset position if screen is resized
+    window.addEventListener("resize", () => {
+      slide(0); // recalculate on resize
+    });
   </script>
   <script>
-  const menuToggle = document.getElementById("mobile-menu");
-  const mobileNav = document.getElementById("mobile-nav");
-  const closeBtn = document.getElementById("close-menu");
-  const servicesToggle = document.getElementById("services-toggle");
-  const dropdownWrapper = servicesToggle.closest(".dropdown-mobile");
+    const menuToggle = document.getElementById("mobile-menu");
+    const mobileNav = document.getElementById("mobile-nav");
+    const closeBtn = document.getElementById("close-menu");
+    const servicesToggle = document.getElementById("services-toggle");
+    const dropdownWrapper = servicesToggle.closest(".dropdown-mobile");
 
-  menuToggle.addEventListener("click", () => {
-    mobileNav.classList.add("active");
-  });
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.add("active");
+    });
 
-  closeBtn.addEventListener("click", () => {
-    mobileNav.classList.remove("active");
-  });
+    closeBtn.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+    });
 
-  servicesToggle.addEventListener("click", (e) => {
-    e.preventDefault();
-    dropdownWrapper.classList.toggle("open");
-  });
-</script>
+    servicesToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      dropdownWrapper.classList.toggle("open");
+    });
+  </script>
 
 </body>
 

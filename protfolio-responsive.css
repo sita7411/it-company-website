@@ -137,6 +137,7 @@ hero - section
     padding: 27px;
     gap: 47px;
     justify-content: center;
+    margin-top: -38px;
   }
   .App-Column {
     display: contents;
@@ -146,7 +147,7 @@ hero - section
 /* ========== 600px and below ========== */
 @media (max-width: 600px) {
   .portfolio-header h2 {
-    font-size: 24px;
+    font-size: 29px;
   }
   .portfolio-card h3 {
     font-size: 20px;
@@ -191,7 +192,6 @@ hero - section
     height: 160px;
   }
 }
-
 
 /* --- footer Responsive Adjustments
  --- */

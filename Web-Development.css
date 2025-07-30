@@ -15,7 +15,7 @@ body {
 /*================================================
 header - section
 =================================================*/
-/* Header */
+
 .main-header {
   background: #f7fafe;
   padding: 15px 20px;
@@ -256,7 +256,7 @@ hero - section
 }
 
 .banner-content p a {
-  color: #033d57;
+  color: #042c3f;
   text-decoration: none;
   font-weight: 700;
 }
@@ -327,8 +327,8 @@ mobile app - section
 }
 
 .image img {
-  max-width: 100%;
-  height: auto;
+     max-width: 86%;
+    margin-left: 55px;
 }
 
 /* Animation Keyframes */
@@ -366,7 +366,7 @@ Mobile App Service - Section
 }
 
 .App-section h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   color: #0080c6;
   margin-bottom: 20px;
@@ -375,7 +375,7 @@ Mobile App Service - Section
 .App-section p {
   max-width: 800px;
   margin: 0 auto 60px;
-  font-size: 26px;
+  font-size: 28px;
   color: #073e57;
   font-weight: 700;
   line-height: 1.6;
@@ -452,8 +452,8 @@ App development process - section
 
 .section-tag {
   color: #0080c6;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -646,12 +646,14 @@ technology - section
   padding: 80px 40px;
   text-align: center;
   background-color: #fff;
+  margin-bottom: -41px;
 }
 
 .tech-section h2 {
-  font-size: 36px;
+  font-size: 32px;
   color: #0080c6;
   margin-bottom: 53px;
+  font-weight: 700;
 }
 
 .tabs {
@@ -718,6 +720,9 @@ input#tab5:checked ~ #content5 {
 }
 
 .tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100px;
   height: 100px;
@@ -725,11 +730,13 @@ input#tab5:checked ~ #content5 {
 }
 
 .tech-icon img {
-  width: 55%;
-  height: 97%;
+  width:109%;
+  height: 60%;
   object-fit: contain;
   border-radius: 50%;
+  display: block;
 }
+
 
 .circle-animation {
   position: absolute;
@@ -754,8 +761,8 @@ input#tab5:checked ~ #content5 {
 .tech-card p {
   margin: 0;
   font-weight: 500;
-  color: #333;
-}
+  color: #043b55;
+} 
 
 /*================================================
 project - section
@@ -852,76 +859,6 @@ project - section
   }
 }
 
-/*========================================
-Client - section
-========================================*/
-
-.stats-section {
-  max-width: 1200px;
-  margin: 78px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.stats-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 142px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.stat-card {
-  position: relative;
-  background: #0080c6;
-  color: white;
-  width: 250px;
-  border-radius: 10px;
-  padding: 18px 20px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border: 5px solid #035298;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.stat-card::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: -12px;
-  right: -11px;
-  bottom: -10px;
-  background: #56b9e1;
-  border-radius: 10px;
-  transform: rotate(-10deg);
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.stat-card:hover::before {
-  transform: rotate(10deg);
-  transition: all 0.3s;
-}
-/* .stat-card:hover {
-    transform: translateY(-5px);
-  } */
-.stat-number {
-  background-color: #fff;
-  border: 3px solid #035298;
-  border-radius: 5px;
-  color: #0080c6;
-  font-size: 30px;
-  font-weight: 700;
-  padding: 10px 20px;
-  margin: 0 auto 10px auto;
-  width: fit-content;
-}
-.stat-text {
-  font-size: 18px;
-  margin-top: 5px;
-  color: #ffffff;
-}
 
 /*========================================
 FAQS - section
@@ -1128,8 +1065,8 @@ FAQS - section
   text-decoration: none;
 }
 
-.footer-column a:hover {
-  color: #0080c6;
+.footer .footer-column ul li a:hover {
+  color: #0080c6 !important;
 }
 
 .footer-column .info-line {
@@ -1172,30 +1109,34 @@ FAQS - section
 .footer-bottom {
   font-size: 15px;
   color: #666;
-  padding: 0 40px;
+  padding: 0 -12px;
   margin-top: 10px;
   position: relative;
   z-index: 1;
 }
 
-.footer-bottom a {
+.footer-bottom a,
+.name{
   color: #0080c6;
+  margin-top: -0px;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .footer p:last-child {
   margin-bottom: 20px;
 }
+a[href="index.html"]:hover {
+  color: #073e57;
+}
 
-.footer-bottom a:hover {
-  text-decoration: underline;
+a[href="index.html"]:hover .name{
+  color: #073e57;
 }
 
 hr {
   border: none;
   border-top: 1px solid #ddd;
-  margin: 90px 40px 30px;
+  margin: 90px 4px 30px;
   position: relative;
   z-index: 1;
 }

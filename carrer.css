@@ -289,7 +289,7 @@ join - section
   background-color: #0080c6;
   color: #fff;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   padding: 4px 10px;
   margin-bottom: 20px;
   margin-left: 81px;
@@ -329,7 +329,7 @@ join - section
 }
 
 /* ===============================
-   aervice card Section
+   service card Section
 ================================== */
 
 .service-card-section {
@@ -403,7 +403,7 @@ join - section
 .career-title {
   text-align: center;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   color: #0080c6;
   margin-bottom: 50px;
   margin-top: -9px;
@@ -476,7 +476,7 @@ join - section
 
 .why-join-section h2 {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   color: #0080c6;
   margin-bottom: 10px;
 }
@@ -533,10 +533,6 @@ join - section
 
 /* ==============================
    Application Form Section
-=============================== */
-
-/* ==============================
-   Modal Styling
 =============================== */
 
 .modal {
@@ -776,6 +772,175 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 90px 40px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   Footer Section
+================================== */
+
+.footer {
+  background: #eafbfd;
+  padding: 80px 40px 30px;
+  color: #4b4b4b;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.footer-map {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+  transform: translateY(-30%);
+  z-index: 0;
+  /* opacity: 0.08; */
+  animation: slideSideways 7s ease-in-out infinite;
+}
+@keyframes slideSideways {
+  0% {
+    transform: translateX(0) translateY(-40%);
+  }
+  50% {
+    transform: translateX(30px) translateY(-40%);
+  }
+  100% {
+    transform: translateX(0) translateY(-40%);
+  }
+}
+.footer-map img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-container {
+  max-width: 1350px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-about {
+  flex: 2 1 400px;
+  max-width: 500px;
+}
+
+.footer-logo {
+  max-width: 100%;
+  margin-bottom: -84px;
+  margin-top: -126px;
+}
+
+.footer-column h3 {
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  color: #6b6b84;
+}
+
+.footer-column a {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer .footer-column ul li a:hover {
+  color: #0080c6 !important;
+}
+
+.footer-column .info-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.footer-column .info-line i {
+  color: #0080c6;
+  font-size: 18px;
+  min-width: 20px;
+  margin-top: 4px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #6b6b84;
+  padding: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #0080c6;
+  color: white;
+}
+
+.footer-bottom {
+  font-size: 15px;
+  color: #666;
+  padding: 0 -12px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-bottom a,
+.name {
+  color: #0080c6;
+  margin-top: -0px;
+  text-decoration: none;
+}
+
+.footer p:last-child {
+  margin-bottom: 20px;
+}
+a[href="index.html"]:hover {
+  color: #073e57;
+  text-decoration: none;
+}
+
+a[href="index.html"]:hover .name {
+  color: #073e57;
+  
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 90px 4px 30px;
   position: relative;
   z-index: 1;
 }

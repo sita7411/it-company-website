@@ -245,7 +245,6 @@ hero - section
   }
 }
 
-
 /* Small Tablet (max-width: 768px) */
 @media (max-width: 768px) {
   .App-section {
@@ -382,7 +381,6 @@ hero - section
    Responsive: App Development Process (Slider)
    ============================================== */
 
-/* Mobile: Slider with arrows (≤ 600px) */
 @media (max-width: 600px) {
   .app-process-section .container {
     flex-direction: column;
@@ -412,7 +410,7 @@ hero - section
   .right-cards-wrapper {
     overflow: hidden;
     width: 100%;
-    margin-bottom: -418px;
+    margin-bottom: -395px;
   }
 
   .right-cards {
@@ -423,7 +421,7 @@ hero - section
   }
 
   .process-card {
-    flex: 0 0 100%;
+    flex: 0 0 100%; /* show 1 card at a time */
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -440,12 +438,17 @@ hero - section
   .process-card p {
     font-size: 14.5px;
   }
+
+  .arrow-nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 1px;
+  }
 }
 
 /* ===============================
    Why Choose Us – Fully Responsive
    =============================== */
-
 
 /* ---------- 1024px and below ---------- */
 @media (max-width: 1024px) {
@@ -502,7 +505,6 @@ hero - section
   .choose-points ul {
     gap: 10px 20px;
     align-items: flex-start;
-
   }
 
   .choose-points li {
@@ -635,7 +637,7 @@ hero - section
 
 @media (max-width: 320px) {
   .tech-section {
-    padding: 20px 10px; /* 🔽 reduced padding */
+    padding: 20px 10px;
   }
 
   .tech-section h2 {
@@ -663,7 +665,6 @@ hero - section
     font-size: 13px;
   }
 }
-
 
 /*===============================================
   Featured App Projects - Responsive Enhancements

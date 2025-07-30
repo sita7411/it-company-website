@@ -18,9 +18,6 @@ img {
   display: block;
 }
 
-
-
-
 /*================================================
 header - section
 =================================================*/
@@ -107,38 +104,58 @@ hero - section
 
 /* ===========================
    Responsive: App Info Section
-   =========================== */
+=========================== */
 
 /* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
   .app-container {
     margin: 60px 40px;
     gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .content,
+  .image {
+    flex: 1 1 48%;
+    animation: none;
+    opacity: 1;
   }
 
   .content h1 {
     font-size: 36px;
   }
 
+  .content p {
+    font-size: 15.5px;
+  }
+
   .btn {
     padding: 12px 24px;
     font-size: 16px;
   }
+
+  .image img {
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* Small Tablet (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
   .app-container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin: 50px 30px;
   }
 
   .content,
   .image {
     flex: 1 1 100%;
-    animation: none; /* Disable animation on small devices */
     opacity: 1;
+    animation: none;
   }
 
   .content h1 {
@@ -152,6 +169,11 @@ hero - section
   .btn {
     font-size: 15px;
     padding: 12px 22px;
+  }
+
+  .image img {
+    max-width: 70%;
+    margin-left: 106px;
   }
 }
 
@@ -223,25 +245,6 @@ hero - section
   }
 }
 
-/* ==========================================
-   Responsive: Mobile App Service Section
-   ========================================== */
-
-/* Tablet (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .App-section {
-    padding: 60px 40px;
-  }
-
-  .App-section h2 {
-    font-size: 32px;
-  }
-
-  .App-section p {
-    font-size: 15px;
-    margin-bottom: 50px;
-  }
-}
 
 /* Small Tablet (max-width: 768px) */
 @media (max-width: 768px) {
@@ -379,7 +382,6 @@ hero - section
    Responsive: App Development Process (Slider)
    ============================================== */
 
-/* Mobile: Slider with arrows (≤ 600px) */
 @media (max-width: 600px) {
   .app-process-section .container {
     flex-direction: column;
@@ -409,7 +411,7 @@ hero - section
   .right-cards-wrapper {
     overflow: hidden;
     width: 100%;
-            margin-bottom: -418px;
+    margin-bottom: -395px;
   }
 
   .right-cards {
@@ -420,7 +422,7 @@ hero - section
   }
 
   .process-card {
-    flex: 0 0 100%;
+    flex: 0 0 100%; /* show 1 card at a time */
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -437,171 +439,137 @@ hero - section
   .process-card p {
     font-size: 14.5px;
   }
+
+  .arrow-nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 1px;
+  }
 }
 
 /* ===============================
    Why Choose Us – Fully Responsive
    =============================== */
 
-/* Tablet (768px – 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .why-choose-us {
-    padding: 60px 20px;
-  }
 
-  .why-choose-us .container {
-    flex-direction: column;
-    align-items: center;
+/* ---------- 1024px and below ---------- */
+@media (max-width: 1024px) {
+  .choose-container {
+    flex-direction: row;
     gap: 40px;
-  }
-
-  .choose-image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .choose-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-  }
-
-  .choose-content {
-    width: 100%;
-    text-align: left;
-    MARGIN-BOTTOM: -326PX;
+    padding: 0 20px;
   }
 
   .choose-content h2 {
     font-size: 28px;
-    margin-top: 0;
+    margin-bottom: 16px;
   }
 
   .choose-content p {
     font-size: 15px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   .choose-points ul {
-    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
-    gap: 20px;
+    gap: 12px 24px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .choose-points li {
     font-size: 15px;
   }
-
-  .choose-points i {
-    font-size: 17px;
-  }
 }
 
-/* Mobile Large (≤768px) */
+/* ---------- 768px and below ---------- */
 @media (max-width: 768px) {
-  .why-choose-us {
-    padding: 50px 15px;
-    margin-top: 0; /* ✅ Removed negative margin */
+  .choose-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    gap: 40px;
   }
 
-  .choose-image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .choose-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
+  .choose-image,
   .choose-content {
-    text-align: left;
-    width: 100%;
+    flex: 1 1 100%;
   }
 
   .choose-content h2 {
     font-size: 24px;
+    margin-bottom: 14px;
   }
 
   .choose-content p {
     font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .choose-points ul {
+    gap: 10px 20px;
+    align-items: flex-start;
+
+  }
+
+  .choose-points li {
+    font-size: 14px;
+  }
+}
+
+/* ---------- 425px and below ---------- */
+@media (max-width: 425px) {
+  .choose-content h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .choose-content p {
+    font-size: 13.5px;
+    margin-bottom: 18px;
   }
 
   .choose-points ul {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 10px;
   }
 
   .choose-points li {
-    font-size: 14.5px;
-    gap: 8px;
-  }
-
-  .choose-points i {
-    font-size: 16px;
-  }
-}
-
-/* Mobile Medium (≤425px) */
-@media (max-width: 425px) {
-  .choose-content h2 {
-    font-size: 22px;
-  }
-
-  .choose-content p {
     font-size: 13.5px;
   }
-
-  .choose-points li {
-    font-size: 13.8px;
-  }
-
-  .choose-points i {
-    font-size: 15px;
-  }
 }
 
-/* Mobile Small (≤375px) */
+/* ---------- 375px and below ---------- */
 @media (max-width: 375px) {
   .choose-content h2 {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .choose-content p {
     font-size: 13px;
+    margin-bottom: 16px;
   }
 
   .choose-points li {
-    font-size: 13.5px;
-  }
-
-  .choose-points i {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
-/* Mobile Extra Small (≤320px) */
+/* ---------- 320px and below ---------- */
 @media (max-width: 320px) {
   .choose-content h2 {
-    font-size: 18.5px;
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .choose-content p {
-    font-size: 12.8px;
+    font-size: 12.5px;
+    margin-bottom: 14px;
   }
 
   .choose-points li {
-    font-size: 13px;
-  }
-
-  .choose-points i {
-    font-size: 13.5px;
+    font-size: 12.5px;
   }
 }
-
 
 /* =========================
    TECHNOLOGY TABS - RESPONSIVE
@@ -610,43 +578,43 @@ hero - section
 /* --- Responsive CSS --- */
 @media (max-width: 768px) {
   .tech-section {
-    padding: 40px 20px; 
+    padding: 40px 20px;
   }
 
   .tech-section h2 {
-    font-size: 28px; 
+    font-size: 28px;
     margin-bottom: 30px;
   }
 
   .tabs {
-    gap: 8px; 
+    gap: 8px;
     margin-bottom: 25px;
   }
 
   .tabs label {
-    padding: 8px 15px; 
+    padding: 8px 15px;
     font-size: 12px;
   }
 
   .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
     margin: 20px auto;
   }
 
   .tech-icon {
-    width: 80px; 
+    width: 80px;
     height: 80px;
   }
 
   .tech-card p {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
   .tech-section {
-    padding: 30px 15px; 
+    padding: 30px 15px;
   }
 
   .tech-section h2 {
@@ -655,7 +623,7 @@ hero - section
   }
 
   .tabs label {
-    font-size: 13px; 
+    font-size: 13px;
     padding: 7px 12px;
   }
 
@@ -665,17 +633,42 @@ hero - section
   }
 
   .tech-icon {
-    width: 70px; 
+    width: 70px;
     height: 70px;
   }
 }
 
-@media (max-width: 320x) {
-    .tech-grid {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-        gap: 15px;
-    }
+@media (max-width: 320px) {
+  .tech-section {
+    padding: 20px 10px; 
+  }
+
+  .tech-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .tabs label {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 12px;
+    margin: 0;
+  }
+
+  .tech-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .tech-card p {
+    font-size: 13px;
+  }
 }
+
 
 /*===============================================
   Featured App Projects - Responsive Enhancements
@@ -683,7 +676,6 @@ hero - section
 
 /* Tablet (≤992px) - Show 2 cards per row */
 @media (max-width: 992px) {
-   
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -801,41 +793,41 @@ hero - section
 /* --- Responsive CSS for FAQ Section --- */
 @media (max-width: 768px) {
   .faq-section {
-    padding: 40px 15px; 
+    padding: 40px 15px;
   }
 
   .faq-subtitle {
-    font-size: 16px; 
+    font-size: 16px;
     margin-bottom: 20px;
   }
 
   .faq-question {
-    padding: 16px 20px; 
-    font-size: 15px; 
+    padding: 16px 20px;
+    font-size: 15px;
   }
 
   .faq-question .symbol {
-    width: 24px; 
+    width: 24px;
     height: 24px;
     font-size: 14px;
   }
 
   .faq-question .symbol::before {
-    font-size: 18px; 
-    margin-bottom: 10px; 
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .faq-item input:checked + .faq-question .symbol::before {
-    margin-bottom: -10px; 
+    margin-bottom: -10px;
   }
 
   .faq-answer {
-    padding: 0 20px; 
+    padding: 0 20px;
     font-size: 15px;
   }
 
   .faq-item input:checked ~ .faq-answer {
-    padding: 12px 20px 18px; 
+    padding: 12px 20px 18px;
   }
 
   .faq-answer p {
@@ -845,7 +837,7 @@ hero - section
 
 @media (max-width: 480px) {
   .faq-section {
-    padding: 30px 10px; 
+    padding: 30px 10px;
   }
 
   .faq-subtitle {
@@ -854,32 +846,32 @@ hero - section
   }
 
   .faq-question {
-    padding: 14px 15px; 
+    padding: 14px 15px;
     font-size: 12px;
   }
 
   .faq-question .symbol {
-    width: 20px; 
+    width: 20px;
     height: 20px;
     font-size: 12px;
   }
 
   .faq-question .symbol::before {
-    font-size: 16px; 
+    font-size: 16px;
     margin-bottom: 8px;
   }
 
   .faq-item input:checked + .faq-question .symbol::before {
-    margin-bottom: -8px; 
+    margin-bottom: -8px;
   }
 
   .faq-answer {
-    padding: 0 15px; 
+    padding: 0 15px;
     font-size: 14px;
   }
 
   .faq-item input:checked ~ .faq-answer {
-    padding: 10px 15px 15px; 
+    padding: 10px 15px 15px;
   }
 
   .faq-answer p {
@@ -889,134 +881,134 @@ hero - section
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 1200px) {
-    .footer-map {
-        right: 10%;
-        width: 500px;
-    }
+  .footer-map {
+    right: 10%;
+    width: 500px;
+  }
 }
 
 @media (max-width: 992px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the start (left) */
-        text-align: left; /* Align text to the left */
-        gap: 33px;
-    }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    text-align: left; /* Align text to the left */
+    gap: 33px;
+  }
 
-    .footer-column {
-        flex: 1 1 auto;
-        min-width: unset;
-        width: 100%;
-        max-width: 400px; /* Still keep a max-width for readability */
-    }
+  .footer-column {
+    flex: 1 1 auto;
+    min-width: unset;
+    width: 100%;
+    max-width: 400px; /* Still keep a max-width for readability */
+  }
 
-    .footer-about {
-        max-width: 400px;
-    }
+  .footer-about {
+    max-width: 400px;
+  }
 
-    .footer-logo {
-        margin-bottom: 20px;
-        margin-top: 0;
-    }
+  .footer-logo {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
 
-    .footer-column h3 {
-        margin-bottom: 20px;
-    }
+  .footer-column h3 {
+    margin-bottom: 20px;
+  }
 
-    .footer-column .info-line {
-        justify-content: flex-start; /* Align info lines to the left */
-    }
+  .footer-column .info-line {
+    justify-content: flex-start; /* Align info lines to the left */
+  }
 
-    .social-icons {
-        margin-top: 25px;
-    }
+  .social-icons {
+    margin-top: 25px;
+  }
 
-    .social-icons a {
-        margin-right: 10px; /* Maintain right margin for spacing */
-        margin-left: 0; /* Ensure no left margin from previous centering */
-    }
+  .social-icons a {
+    margin-right: 10px; /* Maintain right margin for spacing */
+    margin-left: 0; /* Ensure no left margin from previous centering */
+  }
 
-    .footer-map {
-        right: 0;
-        top: 60%;
-        transform: translateY(-50%) translateX(20%);
-        opacity: 0.05;
-        width: 400px;
-    }
+  .footer-map {
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%) translateX(20%);
+    opacity: 0.05;
+    width: 400px;
+  }
 
-    hr {
-        margin: 60px 20px 20px;
-    }
+  hr {
+    margin: 60px 20px 20px;
+  }
 
-    .footer-bottom {
-        padding: 0 20px;
-        text-align: left; /* Align bottom text to the left */
-    }
+  .footer-bottom {
+    padding: 0 20px;
+    text-align: left; /* Align bottom text to the left */
+  }
 }
 
 @media (max-width: 768px) {
-    .footer {
-        padding: 60px 20px 20px;
-    }
+  .footer {
+    padding: 60px 20px 20px;
+  }
 
-    .footer-logo {
-        margin-top: -121px;
-        margin-left: -4px;
-          }
-    .footer-about p{
-      margin-top:-118px;
-        }
-    .footer-map {
-        display: none;
-    }
+  .footer-logo {
+    margin-top: -121px;
+    margin-left: -4px;
+  }
+  .footer-about p {
+    margin-top: -118px;
+  }
+  .footer-map {
+    display: none;
+  }
 
-    .footer-column {
-        padding: 0 10px;
-    }
+  .footer-column {
+    padding: 0 10px;
+  }
 
-    .footer-column h3 {
-        font-size: 18px;
-    }
+  .footer-column h3 {
+    font-size: 18px;
+  }
 
-    .footer-column a,
-    .footer-column .info-line,
-    .footer-bottom {
-        font-size: 14px;
-    }
+  .footer-column a,
+  .footer-column .info-line,
+  .footer-bottom {
+    font-size: 14px;
+  }
 
-    .footer-bottom p {
-        line-height: 1.5;
-    }
+  .footer-bottom p {
+    line-height: 1.5;
+  }
 
-    .footer-bottom a br {
-        display: none;
-    }
+  .footer-bottom a br {
+    display: none;
+  }
 
-    .footer-bottom a span {
-        display: inline;
-        margin-top: 0;
-    }
+  .footer-bottom a span {
+    display: inline;
+    margin-top: 0;
+  }
 
-    hr {
-        margin: 40px 10px 20px;
-    }
+  hr {
+    margin: 40px 10px 20px;
+  }
 }
 
 @media (max-width: 480px) {
-    .footer-about p {
-        font-size: 14px;
-    }
+  .footer-about p {
+    font-size: 14px;
+  }
 
-    .social-icons {
-        margin-top: 20px;
-    }
+  .social-icons {
+    margin-top: 20px;
+  }
 
-    .social-icons a {
-        font-size: 14px;
-        padding: 6px;
-    }
+  .social-icons a {
+    font-size: 14px;
+    padding: 6px;
+  }
 
-    .footer-column h3 {
-        font-size: 17px;
-    }
+  .footer-column h3 {
+    font-size: 17px;
+  }
 }

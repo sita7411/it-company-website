@@ -401,6 +401,8 @@ Mobile App Service - Section
   display: flex;
   justify-content: center;
   gap: 40px;
+    flex-wrap: wrap; /* <--- this helps for wrapping */
+
 }
 
 .App-row .App-card {
