@@ -12,76 +12,124 @@
 </head>
 
 <body>
-    <!-- ================================
+   <!-- ================================
      Header Section 
 ================================== -->
 
     <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/Home/logo.png" alt="Codexira Logo" />
-                </a>
-            </div>
-
-            <div class="menu-toggle" id="mobile-menu">☰</div>
-
-            <nav class="desktop-nav">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="About.html">About us</a></li>
-                    <li class="dropdown">
-                        <a href="Service.Html">Services <span class="arrow">▾</span></a>
-                        <ul class="simple-dropdown">
-                            <li><a href="App-Development.html">App Development</a></li>
-                            <li><a href="Web-Development.html">Web Development</a></li>
-                            <li><a href="ui-ux.html">UI/UX Design</a></li>
-                            <li><a href="game-developemt.html">Game Development</a></li>
-                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="protfolio.html">Portfolio</a></li>
-                    <li><a href="carrer.html">Career</a></li>
-                </ul>
-                <a href="contact-us.html" class="btn-header">CONTACT US</a>
-            </nav>
+      <div class="container">
+        <div class="logo">
+          <img src="images/Home/logo.png" alt="Codexira Logo" />
         </div>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <nav class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="index.html" >Home</a></li>
+
+            <li class="dropdown">
+              <a href="About.html">About us<span class="arrow">▾</span></a>
+              <ul class="simple-dropdown">
+                <li><a href="About-us-2.html">About us-2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="Service.html">Services <span class="arrow">▾</span></a>
+              <ul class="simple-dropdown">
+                <li>
+                  <a href="App-Development.html" 
+                    >App Development</a
+                  >
+                </li>
+                <li><a href="Web-Development.html">Web Development</a></li>
+                <li><a href="ui-ux.html">UI/UX Design</a></li>
+                <li><a href="game-developemt.html">Game Development</a></li>
+                <li><a href="digital-marketing.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li><a href="team.html">Team</a></li>
+
+            <li><a href="protfolio.html">Portfolio</a></li>
+
+            <li class="dropdown">
+              <a href="carrer.html">Carrer<span class="arrow">▾</span></a>
+              <ul class="simple-dropdown">
+                <li><a href="carrer-2.html">Carrer-2</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="contact-us.html" class="btn-header">CONTACT US</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobile-nav">
-        <div class="mobile-nav-header">
-            <div class="mobile-logo">
-                <img src="images/Home/logo.png" alt="Codexira Logo" style="
+      <div class="mobile-nav-header">
+        <div class="mobile-logo">
+          <img
+            src="images/Home/logo.png"
+            alt="Codexira Logo"
+            style="
               height: 180px;
               margin-top: -60px;
               margin-bottom: -60px;
               display: block;
-            " />
-            </div>
-            <div class="close-btn" id="close-menu">×</div>
+            "
+          />
         </div>
-        <ul class="mobile-nav-links">
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="About.html">ABOUT US</a></li>
-            <li class="dropdown-mobile">
-                <a href="Service.Html" id="services-toggle">SERVICES <span class="arrow">▾</span></a>
-                <ul class="mobile-submenu" id="services-menu">
-                    <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
-                    <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
-                    <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
-                    <li><a href="game-developemt.html">GAME DEVELOPMENT</a></li>
-                    <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
-                </ul>
-            </li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="protfolio.html">PORTFOLIO</a></li>
-            <li><a href="carrer.html">CAREER</a></li>
-            <li><a href="contact-us.html">CONTACT US</a></li>
+        <div class="close-btn" id="close-menu">×</div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" >HOME</a></li>
 
-        </ul>
+        <!-- ABOUT US -->
+        <li class="dropdown-mobile">
+          <a href="About.html" id="about-toggle" 
+            >ABOUT US <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="about-menu">
+            <li><a href="About-us-2.html">ABOUT US-2</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown-mobile">
+          <a href="Service.html" id="services-toggle"
+            >SERVICES <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="services-menu">
+            <li>
+              <a href="App-Development.html" >APP DEVELOPMENT</a>
+            </li>
+            <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
+            <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
+            <li><a href="game-developemt.html" class="active">GAME DEVELOPMENT</a></li>
+            <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
+          </ul>
+        </li>
+
+        <li><a href="team.html">TEAM</a></li>
+
+        <li><a href="protfolio.html">PORTFOLIO</a></li>
+
+        <!-- CARRER -->
+        <li class="dropdown-mobile">
+          <a href="carrer.html" id="career-toggle"
+            >CARRER <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="career-menu">
+            <li><a href="carrer-2.html">CARRER-2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact-us.html">CONTACT US</a></li>
+      </ul>
     </nav>
+
 
     <!-- ================================
        Hero Section 
@@ -824,24 +872,44 @@
             slide(0); // recalculate on resize
         });
     </script>
+    
     <script>
-        const menuToggle = document.getElementById("mobile-menu");
-        const mobileNav = document.getElementById("mobile-nav");
-        const closeBtn = document.getElementById("close-menu");
-        const servicesToggle = document.getElementById("services-toggle");
-        const dropdownWrapper = servicesToggle.closest(".dropdown-mobile");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeBtn = document.getElementById("close-menu");
 
-        menuToggle.addEventListener("click", () => {
-            mobileNav.classList.add("active");
+      // Open mobile nav
+      mobileMenu.addEventListener("click", () => {
+        mobileNav.classList.add("active");
+      });
+
+      // Close mobile nav
+      closeBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+      });
+
+      // ABOUT
+      document
+        .getElementById("about-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("about-menu").classList.toggle("open");
         });
 
-        closeBtn.addEventListener("click", () => {
-            mobileNav.classList.remove("active");
+      // SERVICES
+      document
+        .getElementById("services-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("services-menu").classList.toggle("open");
         });
 
-        servicesToggle.addEventListener("click", (e) => {
-            e.preventDefault();
-            dropdownWrapper.classList.toggle("open");
+      // CAREER
+      document
+        .getElementById("career-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("career-menu").classList.toggle("open");
         });
     </script>
 

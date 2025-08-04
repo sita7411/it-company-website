@@ -75,7 +75,7 @@ header - section
 }
 
 .simple-dropdown {
-    list-style: none;
+  list-style: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -205,7 +205,7 @@ header - section
   background: linear-gradient(to right, #e6fbff, #ffffff);
 }
 
-.dropdown-mobile.open .mobile-submenu {
+.mobile-submenu.open {
   display: block;
 }
 
@@ -282,12 +282,11 @@ Service - section
   padding: 40px 20px;
 }
 
-
 .card {
   width: 320px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   background: #fff;
 }
@@ -335,7 +334,6 @@ Service - section
   height: 100%;
   object-fit: contain;
 }
-
 
 .card-content {
   padding: 40px 20px 20px 20px;
@@ -529,7 +527,7 @@ Service - section
 }
 
 .footer-bottom a,
-span {
+.span2 {
   color: #0080c6;
   margin-top: -0px;
   text-decoration: none;

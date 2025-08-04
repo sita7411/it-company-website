@@ -1,419 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codexira Infotech Header</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="carrer.css" />
+    <link rel="stylesheet" href="carrer-responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codexira Infotech Header</title>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="carrer.css" />
-  <link rel="stylesheet" href="carrer-responsive.css" />
-</head>
-
-<body>
-  <!-- ================================
+  <body>
+    <!-- ================================
      Header Section 
 ================================== -->
 
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">
-        <img src="images/Home/logo.png" alt="Codexira Logo" />
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/Home/logo.png" alt="Codexira Logo" />
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+
+        <nav class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+              <a href="About.html">About us<span class="arrow">▾</span></a>
+              <ul class="simple-dropdown">
+                <li><a href="About-us-2.html">About us-2</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="Service.html">Services <span class="arrow">▾</span></a>
+              <ul class="simple-dropdown">
+                <li><a href="App-Development.html">App Development</a></li>
+                <li><a href="Web-Development.html">Web Development</a></li>
+                <li><a href="ui-ux.html">UI/UX Design</a></li>
+                <li><a href="game-developemt.html">Game Development</a></li>
+                <li><a href="digital-marketing.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+
+            <li><a href="team.html">Team</a></li>
+
+            <li><a href="protfolio.html">Portfolio</a></li>
+
+            <li class="dropdown">
+              <a href="carrer.html" class="active"
+                >Carrer<span class="arrow">▾</span></a
+              >
+              <ul class="simple-dropdown">
+                <li><a href="carrer-2.html">Carrer-2</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="contact-us.html" class="btn-header">CONTACT US</a>
+        </nav>
       </div>
+    </header>
 
-      <div class="menu-toggle" id="mobile-menu">☰</div>
-
-      <nav class="desktop-nav">
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="About.html">About us</a></li>
-          <li class="dropdown">
-            <a href="Service.Html">Services <span class="arrow">▾</span></a>
-            <ul class="simple-dropdown">
-              <li><a href="App-Development.html">App Development</a></li>
-              <li><a href="Web-Development.html">Web Development</a></li>
-              <li><a href="ui-ux.html">UI/UX Design</a></li>
-              <li><a href="game-developemt.html">Game Development</a></li>
-              <li><a href="digital-marketing.html">Digital Marketing</a></li>
-            </ul>
-          </li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="protfolio.html">Portfolio</a></li>
-          <li><a href="carrer.html">Career</a></li>
-        </ul>
-        <a href="contact-us.html" class="btn-header">CONTACT US</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Mobile Nav -->
-  <nav class="mobile-nav" id="mobile-nav">
-    <div class="mobile-nav-header">
-      <div class="mobile-logo">
-        <img src="images/Home/logo.png" alt="Codexira Logo" style="
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav-header">
+        <div class="mobile-logo">
+          <img
+            src="images/Home/logo.png"
+            alt="Codexira Logo"
+            style="
               height: 180px;
               margin-top: -60px;
               margin-bottom: -60px;
               display: block;
-            " />
+            "
+          />
+        </div>
+        <div class="close-btn" id="close-menu">×</div>
       </div>
-      <div class="close-btn" id="close-menu">×</div>
-    </div>
-    <ul class="mobile-nav-links">
-      <li><a href="index.html" class="active">HOME</a></li>
-      <li><a href="About.html">ABOUT US</a></li>
-      <li class="dropdown-mobile">
-        <a href="Service.Html" id="services-toggle">SERVICES <span class="arrow">▾</span></a>
-        <ul class="mobile-submenu" id="services-menu">
-          <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
-          <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
-          <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
-          <li><a href="game-developemt.html">GAME DEVELOPMENT</a></li>
-          <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
-        </ul>
-      </li>
-      <li><a href="team.html">TEAM</a></li>
-      <li><a href="protfolio.html">PORTFOLIO</a></li>
-      <li><a href="carrer.html">CAREER</a></li>
-      <li><a href="contact-us.html">CONTACT US</a></li>
-    </ul>
-  </nav>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">HOME</a></li>
 
-  <!-- ================================
+        <!-- ABOUT US -->
+        <li class="dropdown-mobile">
+          <a href="About.html" id="about-toggle"
+            >ABOUT US <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="about-menu">
+            <li><a href="About-us-2.html">ABOUT US-2</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown-mobile">
+          <a href="Service.html" id="services-toggle"
+            >SERVICES <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="services-menu">
+            <li><a href="App-Development.html">APP DEVELOPMENT</a></li>
+            <li><a href="Web-Development.html">WEB DEVELOPMENT</a></li>
+            <li><a href="ui-ux.html">UI/UX DESIGN</a></li>
+            <li><a href="game-developemt.html">GAME DEVELOPMENT</a></li>
+            <li><a href="digital-marketing.html">DIGITAL MARKETING</a></li>
+          </ul>
+        </li>
+
+        <li><a href="team.html">TEAM</a></li>
+
+        <li><a href="protfolio.html">PORTFOLIO</a></li>
+
+        <!-- CARRER -->
+        <li class="dropdown-mobile">
+          <a href="carrer.html" id="career-toggle" class="active"
+            >CARRER <span class="arrow">▾</span></a
+          >
+          <ul class="mobile-submenu" id="career-menu">
+            <li><a href="carrer-2.html">CARRER-2</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact-us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <!-- ================================
      Hero Section 
 ================================== -->
-  <section class="about-banner">
-    <div class="about-banner-overlay">
-      <div class="banner-content">
-        <h1>Career</h1>
-        <p><a href="index.html">Home</a> <span>»</span>Career</p>
+    <section class="about-banner">
+      <div class="about-banner-overlay">
+        <div class="banner-content">
+          <h1>Career</h1>
+          <p><a href="index.html">Home</a> <span>»</span>Career</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================================
+    <!-- ================================
      join us Section 
 ================================== -->
-  <section class="intro-section">
-    <div class="intro-container">
-      <div class="intro-left">
-        <p class="label">Join Our Team</p>
-        <h2>Welcome, Visionaries! Your Code. Your Future. Our Platform.</h2>
-        <span class="divider-line"></span>
+    <section class="intro-section">
+      <div class="intro-container">
+        <div class="intro-left">
+          <p class="label">Join Our Team</p>
+          <h2>Welcome, Visionaries! Your Code. Your Future. Our Platform.</h2>
+          <span class="divider-line"></span>
+        </div>
+        <div class="intro-right">
+          <p>
+            At Codexira Infotech, we believe your career should grow with
+            purpose. Join a team of innovators, problem-solvers, and creators
+            working on meaningful projects that shape the digital world. From
+            product design to full-stack development, we empower you to explore,
+            learn, and thrive in a culture that values curiosity, collaboration,
+            and impact. Whether you're an experienced developer or just starting
+            out, we offer continuous learning, mentorship, and real
+            opportunities to grow. Be part of a workplace where your ideas
+            matter, your growth is prioritized, and your journey is celebrated.
+          </p>
+        </div>
       </div>
-      <div class="intro-right">
-        <p>
-          At Codexira Infotech, we believe your career should grow with
-          purpose. Join a team of innovators, problem-solvers, and creators
-          working on meaningful projects that shape the digital world. From
-          product design to full-stack development, we empower you to explore,
-          learn, and thrive in a culture that values curiosity, collaboration,
-          and impact. Whether you're an experienced developer or just starting
-          out, we offer continuous learning, mentorship, and real
-          opportunities to grow. Be part of a workplace where your ideas
-          matter, your growth is prioritized, and your journey is celebrated.
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================================
+    <!-- ================================
      images Section 
 ================================== -->
 
-  <section class="service-card-section">
-    <div class="card">
-      <img src="images/career/img-1.jpg" alt="Life Insurance" />
-      <div class="card-caption">
-        <i class="fas fa-users"></i>
-        <span>Code Your Future</span>
+    <section class="service-card-section">
+      <div class="card">
+        <img src="images/career/img-1.jpg" alt="Life Insurance" />
+        <div class="card-caption">
+          <i class="fas fa-users"></i>
+          <span>Code Your Future</span>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="images/career/img-2.jpg" alt="Home Insurance" />
-      <div class="card-caption">
-        <i class="fas fa-lightbulb"></i>
-        <span>Tech Innovation</span>
+      <div class="card">
+        <img src="images/career/img-2.jpg" alt="Home Insurance" />
+        <div class="card-caption">
+          <i class="fas fa-lightbulb"></i>
+          <span>Tech Innovation</span>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="images/career/img-3.jpg" alt="Auto Insurance" />
-      <div class="card-caption">
-        <i class="fas fa-chart-line"></i>
-        <span>Grow with Us</span>
+      <div class="card">
+        <img src="images/career/img-3.jpg" alt="Auto Insurance" />
+        <div class="card-caption">
+          <i class="fas fa-chart-line"></i>
+          <span>Grow with Us</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================================
+    <!-- ================================
        job Section
   ================================== -->
 
-  <section class="career-section">
-    <h2 class="career-title">Ignite Your Career Journey</h2>
-    <div class="career-grid">
-      <!-- Job Box -->
-      <div class="job-card">
-        <div class="job-content">
-          <h3>Flutter Developer</h3>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;&nbsp;
-            <i class="fas fa-graduation-cap"></i> Graduate &nbsp;&nbsp;
-            <i class="fas fa-user-friends"></i> 1 - 2 Years
-          </p>
+    <section class="career-section">
+      <h2 class="career-title">Ignite Your Career Journey</h2>
+      <div class="career-grid">
+        <!-- Job Box -->
+        <div class="job-card">
+          <div class="job-content">
+            <h3>Flutter Developer</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;&nbsp;
+              <i class="fas fa-graduation-cap"></i> Graduate &nbsp;&nbsp;
+              <i class="fas fa-user-friends"></i> 1 - 2 Years
+            </p>
+          </div>
+          <a href="#" class="apply-btn"
+            >Apply Now <i class="fas fa-arrow-right"></i
+          ></a>
         </div>
-        <a href="#" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-      </div>
 
-      <div class="job-card">
-        <div class="job-content">
-          <h3>Full Stack Developer</h3>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;&nbsp;
-            <i class="fas fa-graduation-cap"></i> Graduate &nbsp;&nbsp;
-            <i class="fas fa-user-friends"></i> 2 - 5 Years
-          </p>
+        <div class="job-card">
+          <div class="job-content">
+            <h3>Full Stack Developer</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;&nbsp;
+              <i class="fas fa-graduation-cap"></i> Graduate &nbsp;&nbsp;
+              <i class="fas fa-user-friends"></i> 2 - 5 Years
+            </p>
+          </div>
+          <a href="#" class="apply-btn"
+            >Apply Now <i class="fas fa-arrow-right"></i
+          ></a>
         </div>
-        <a href="#" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
-      </div>
 
-      <div class="job-card">
-        <div class="job-content">
-          <h3>React Native Developer</h3>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;&nbsp;
-            <i class="fas fa-graduation-cap"></i> Graduate &nbsp;&nbsp;
-            <i class="fas fa-user-friends"></i> 0 - 1 Years
-          </p>
+        <div class="job-card">
+          <div class="job-content">
+            <h3>React Native Developer</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Surat, Gujarat &nbsp;&nbsp;
+              <i class="fas fa-graduation-cap"></i> Graduate &nbsp;&nbsp;
+              <i class="fas fa-user-friends"></i> 0 - 1 Years
+            </p>
+          </div>
+          <a href="#" class="apply-btn"
+            >Apply Now <i class="fas fa-arrow-right"></i
+          ></a>
         </div>
-        <a href="#" class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ================================
+    <!-- ================================
        WHY JOIN Section
   ================================== -->
 
-  <section class="why-join-section">
-    <h2>Why <span>Join Us!</span></h2>
-    <p>
-      Join us to be part of a dynamic and supportive team where your skills
-      and talents will be valued, and together we can make a meaningful impact
-      in our industry.
-    </p>
+    <section class="why-join-section">
+      <h2>Why <span>Join Us!</span></h2>
+      <p>
+        Join us to be part of a dynamic and supportive team where your skills
+        and talents will be valued, and together we can make a meaningful impact
+        in our industry.
+      </p>
 
-    <div class="why-join-grid">
-      <div class="why-join-item">
-        <div class="why-join-icon">
-          <img src="images/career/icon-1.png" alt="Icon" />
+      <div class="why-join-grid">
+        <div class="why-join-item">
+          <div class="why-join-icon">
+            <img src="images/career/icon-1.png" alt="Icon" />
+          </div>
+          <h4>5.5 Days Working</h4>
         </div>
-        <h4>5.5 Days Working</h4>
-      </div>
-      <div class="why-join-item">
-        <div class="why-join-icon">
-          <img src="images/career/icon-2.png" alt="Icon" />
+        <div class="why-join-item">
+          <div class="why-join-icon">
+            <img src="images/career/icon-2.png" alt="Icon" />
+          </div>
+          <h4>Flexible Timings</h4>
         </div>
-        <h4>Flexible Timings</h4>
-      </div>
-      <div class="why-join-item">
-        <div class="why-join-icon">
-          <img src="images/career/icon-3.png" alt="Icon" />
+        <div class="why-join-item">
+          <div class="why-join-icon">
+            <img src="images/career/icon-3.png" alt="Icon" />
+          </div>
+          <h4>Great Achievement</h4>
         </div>
-        <h4>Great Achievement</h4>
-      </div>
-      <div class="why-join-item">
-        <div class="why-join-icon">
-          <img src="images/career/icon-4.png" alt="Icon" />
+        <div class="why-join-item">
+          <div class="why-join-icon">
+            <img src="images/career/icon-4.png" alt="Icon" />
+          </div>
+          <h4>Training</h4>
         </div>
-        <h4>Training</h4>
-      </div>
-      <div class="why-join-item">
-        <div class="why-join-icon">
-          <img src="images/career/icon-5.png" alt="Icon" />
+        <div class="why-join-item">
+          <div class="why-join-icon">
+            <img src="images/career/icon-5.png" alt="Icon" />
+          </div>
+          <h4>Career Growth</h4>
         </div>
-        <h4>Career Growth</h4>
-      </div>
-      <div class="why-join-item">
-        <div class="why-join-icon">
-          <img src="images/career/icon-6.png" alt="Icon" />
+        <div class="why-join-item">
+          <div class="why-join-icon">
+            <img src="images/career/icon-6.png" alt="Icon" />
+          </div>
+          <h4>Celebration</h4>
         </div>
-        <h4>Celebration</h4>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==============================
+    <!-- ==============================
      Application Modal Form
 =============================== -->
-  <div id="applyModal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <h3>Apply for Job</h3>
-      <form id="applicationForm">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="text" name="lastname" placeholder="LastName" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone" required />
-        <input type="file" name="cv" accept=".pdf,.doc,.docx" required />
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send Application</button>
-      </form>
+    <div id="applyModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Apply for Job</h3>
+        <form id="applicationForm">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="text" name="lastname" placeholder="LastName" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Phone" required />
+          <input type="file" name="cv" accept=".pdf,.doc,.docx" required />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">Send Application</button>
+        </form>
+      </div>
     </div>
-  </div>
 
     <!-- ================================
        Footer Section
   ================================== -->
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- About -->
-      <div class="footer-column footer-about">
-        <img src="images/Home/logo.png" alt="LogicBuzz Logo" class="footer-logo" />
-        <p style="font-weight: 500">
-          Codexira Infotech LLP, we specialize in making technologically
-          advanced Mobile App and web solutions that allow our customers to
-          serve their customers better.
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-column footer-about">
+          <img
+            src="images/Home/logo.png"
+            alt="LogicBuzz Logo"
+            class="footer-logo"
+          />
+          <p style="font-weight: 500">
+            Codexira Infotech LLP, we specialize in making technologically
+            advanced Mobile App and web solutions that allow our customers to
+            serve their customers better.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://twitter.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="carrer.html">Career</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="App-Development.html">Mobile App Development</a></li>
+            <li><a href="Web-Development.html">Web Development</a></li>
+            <li><a href="ui-ux.html">UI/UX Designing</a></li>
+            <li><a href="game-developemt.html">Game Development</a></li>
+            <li><a href="digital-marketing.html">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-column">
+          <h3>Address</h3>
+          <div class="info-line">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>440,Opera Business Hub, Surat, Gujarat.</span>
+          </div>
+          <div class="info-line">
+            <i class="fas fa-phone"></i>
+            <span>+91 1234567890</span>
+          </div>
+          <div class="info-line">
+            <i class="fas fa-envelope"></i>
+            <span>info@codexirainfotech.com</span>
+          </div>
+        </div>
+
+        <!-- Background Map -->
+        <div class="footer-map">
+          <img src="images/Home/footer-map.webp" alt="Test Map" />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>
+          ©2025<span id="year"></span>
+          <strong style="color: #221638; font-weight: 800"
+            >Codexira Infotech</strong
+          >
+          is Proudly Powered by
+          <a href="index.html"
+            >Codexira<br /><span
+              class="name"
+              style="display: inline-block; margin-top: 6px"
+              >Infotech LLP</span
+            ></a
+          >
         </p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/"><i class="fab fa-twitter"></i></a>
-          <a href="https://twitter.com/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-        </div>
       </div>
+    </footer>
 
-      <!-- Company -->
-      <div class="footer-column">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="Service.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="carrer.html">Career</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </div>
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeBtn = document.getElementById("close-menu");
 
-      <!-- Services -->
-      <div class="footer-column">
-        <h3>Our Services</h3>
-        <ul>
-          <li><a href="App-Development.html">Mobile App Development</a></li>
-          <li><a href="Web-Development.html">Web Development</a></li>
-          <li><a href="ui-ux.html">UI/UX Designing</a></li>
-          <li><a href="game-developemt.html">Game Development</a></li>
-          <li><a href="digital-marketing.html">Digital Marketing</a></li>
-        </ul>
-      </div>
-
-      <!-- Address -->
-      <div class="footer-column">
-        <h3>Address</h3>
-        <div class="info-line">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>440,Opera Business Hub, Surat, Gujarat.</span>
-        </div>
-        <div class="info-line">
-          <i class="fas fa-phone"></i>
-          <span>+91 1234567890</span>
-        </div>
-        <div class="info-line">
-          <i class="fas fa-envelope"></i>
-          <span>info@codexirainfotech.com</span>
-        </div>
-      </div>
-
-      <!-- Background Map -->
-      <div class="footer-map">
-        <img src="images/Home/footer-map.webp" alt="Test Map" />
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="footer-bottom">
-      <p>
-        ©2025<span id="year"></span>
-        <strong style="color: #221638; font-weight: 800">Codexira Infotech</strong>
-        is Proudly Powered by
-        <a href="index.html">Codexira<br /><span class="name" style="display: inline-block; margin-top: 6px">Infotech LLP</span></a>
-      </p>
-    </div>
-  </footer>
-
-  <script>
-    const menuToggle = document.getElementById("mobile-menu");
-    const mobileNav = document.getElementById("mobile-nav");
-    const closeBtn = document.getElementById("close-menu");
-    const servicesToggle = document.getElementById("services-toggle");
-    const dropdownWrapper = servicesToggle.closest(".dropdown-mobile");
-
-    document
-      .getElementById("mobile-menu")
-      .addEventListener("click", function () {
-        document.getElementById("mobile-nav").classList.add("active");
+      // Open mobile nav
+      mobileMenu.addEventListener("click", () => {
+        mobileNav.classList.add("active");
       });
 
-    document
-      .getElementById("close-menu")
-      .addEventListener("click", function () {
-        document.getElementById("mobile-nav").classList.remove("active");
+      // Close mobile nav
+      closeBtn.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
       });
 
-    document
-      .getElementById("services-toggle")
-      .addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(".dropdown-mobile").classList.toggle("open");
+      // Toggle each dropdown separately
+      // ABOUT
+      document
+        .getElementById("about-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("about-menu").classList.toggle("open");
+        });
+
+      // SERVICES
+      document
+        .getElementById("services-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("services-menu").classList.toggle("open");
+        });
+
+      // CAREER
+      document
+        .getElementById("career-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("career-menu").classList.toggle("open");
+        });
+    </script>
+
+    <script>
+      // Get elements
+      const modal = document.getElementById("applyModal");
+      const closeModal = document.querySelector(".close-modal");
+
+      // Open modal when any .apply-btn is clicked
+      document.querySelectorAll(".apply-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.style.display = "block";
+          document.body.style.overflow = "hidden"; // disable background scroll
+        });
       });
-  </script>
-  <script>
-    // Get elements
-    const modal = document.getElementById("applyModal");
-    const closeModal = document.querySelector(".close-modal");
 
-    // Open modal when any .apply-btn is clicked
-    document.querySelectorAll(".apply-btn").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.style.display = "block";
-        document.body.style.overflow = "hidden"; // disable background scroll
-      });
-    });
-
-    // Close modal
-    closeModal.addEventListener("click", () => {
-      modal.style.display = "none";
-      document.body.style.overflow = "auto";
-    });
-
-    // Close modal if clicking outside modal content
-    window.addEventListener("click", (e) => {
-      if (e.target == modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
-      }
-    });
-
-    // Handle form submission
-    document
-      .getElementById("applicationForm")
-      .addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // You can collect data here if needed
-        alert("Application submitted successfully!");
-
-        this.reset();
+      // Close modal
+      closeModal.addEventListener("click", () => {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
       });
-  </script>
-</body>
 
+      // Close modal if clicking outside modal content
+      window.addEventListener("click", (e) => {
+        if (e.target == modal) {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      // Handle form submission
+      document
+        .getElementById("applicationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // You can collect data here if needed
+          alert("Application submitted successfully!");
+
+          this.reset();
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        });
+    </script>
+  </body>
 </html>

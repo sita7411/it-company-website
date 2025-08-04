@@ -204,7 +204,7 @@ header - section
   background: linear-gradient(to right, #e6fbff, #ffffff);
 }
 
-.dropdown-mobile.open .mobile-submenu {
+.mobile-submenu.open {
   display: block;
 }
 
@@ -503,7 +503,7 @@ team - section
   z-index: 1;
 }
 
-.footer-bottom a ,span{
+.footer-bottom a ,.span2{
   color: #0080c6;
   margin-top: -0px;
   text-decoration: none;

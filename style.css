@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik",sans-serif;
 }
 
 /*================================================
@@ -71,7 +71,7 @@ header - section
 .simple-dropdown {
   list-style: none;
   position: absolute;
-  top: 100%;
+  top: 173%;
   left: 0;
   background: #fff;
   width: 220px;
@@ -199,7 +199,7 @@ header - section
   background: linear-gradient(to right, #e6fbff, #ffffff);
 }
 
-.dropdown-mobile.open .mobile-submenu {
+.mobile-submenu.open {
   display: block;
 }
 
@@ -209,6 +209,7 @@ header - section
   padding: 12px 0;
   border-bottom: 1px solid #333;
 }
+
 
 /*================================================
 hero - section
@@ -1971,7 +1972,7 @@ button:hover {
   z-index: 1;
 }
 
-.footer-bottom a ,span{
+.footer-bottom a ,.span2{
   color: #0080c6;
   margin-top: -0px;
   text-decoration: none;
